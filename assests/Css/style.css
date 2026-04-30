@@ -23,19 +23,49 @@ h6 {
   max-width: 1600px;
   margin: 0 auto;
 }
+/* NAVBAR */
+
+/* white navbar  */
+.ulwhiteNav {
+  list-style: none;
+  gap: 7px;
+  height: 30px;
+  padding: 0;
+  margin: 0;
+}
+/* color last button */
+.navRedBtn {
+  background-color: var(--second-color);
+}
+
+/* black navbar */
+.blackNav {
+  background-color: black;
+}
+/* NBA logo */
+.LogoNav img {
+  width: 213.5px;
+  height: 80%;
+  z-index: 1000;
+}
+/* letter image */
+.LetterImg {
+  height: 80px;
+  width: 150px;
+}
 /* HEADER */
 
 /* navbar header */
-ul {
+.customHeader ul {
   background-color: var(--first-color);
   padding: 0;
 }
-ul li {
+.customHeader ul li {
   list-style-type: none;
   width: 100%;
   text-align: center;
 }
-ul li a {
+.customHeader ul li a {
   line-height: 2.1875rem;
   text-transform: uppercase;
   text-decoration: none;
@@ -43,7 +73,7 @@ ul li a {
   font-weight: 600;
   font-size: 12px;
 }
-ul li:hover {
+.customHeader ul li:hover {
   background-color: #335ba7;
   cursor: pointer;
 }
@@ -62,14 +92,11 @@ ul li:hover {
   text-decoration: underline;
   text-underline-offset: 3px;
 }
+/* navbar header end */
 /*header carousel start */
-.carousel-item {
-  width: 70px;
-  height: 50px;
-}
+
 /* header carousel end */
 
-/* navbar header end */
 .headerPic {
   width: 100%;
   height: 100%;
