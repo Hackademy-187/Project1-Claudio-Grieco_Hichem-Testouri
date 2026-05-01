@@ -26,33 +26,42 @@ h6 {
 /* NAVBAR */
 
 /* white navbar  */
-.ulwhiteNav {
-  list-style: none;
-  gap: 7px;
-  height: 30px;
-  padding: 0;
-  margin: 0;
+.whiteNav {
+  height: 40px;
+  background-color: var(--white-color);
+  font-size: 13px;
+  font-weight: 400;
+}
+.dropdown-toggle::after {
+  font-size: 17px;
+  transform: translate(-2px, 2px);
+  color: black;
 }
 /* color last button */
 .navRedBtn {
   background-color: var(--second-color);
+  border-radius: 0;
+}
+.cart {
+  width: 60px;
+  height: 40px;
+  padding: 8px, 7px;
+  background-color: #e61a4d;
 }
 
 /* black navbar */
 .blackNav {
-  background-color: black;
+  background-color: rgb(255, 255, 255);
+  z-index: -1;
 }
+
 /* NBA logo */
 .LogoNav img {
-  width: 213.5px;
-  height: 80%;
-  z-index: 1000;
+  max-width: 60%;
+  height: auto;
 }
-/* letter image */
-.LetterImg {
-  height: 80px;
-  width: 150px;
-}
+/* navbar list */
+
 /* HEADER */
 
 /* navbar header */
