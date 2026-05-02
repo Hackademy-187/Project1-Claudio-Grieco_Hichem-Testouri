@@ -1,11 +1,10 @@
 // NAVBAR SCROLL EFFECT
-let nav = document.querySelector('.containerNav');
+let nav = document.querySelector(".containerNav");
 let scrollPos = 0;
-window.addEventListener('scroll', () => {
+window.addEventListener("scroll", () => {
   if (window.scrollY > 50) {
-    nav.classList.add('nav-scrolled');
+    nav.classList.add("nav-scrolled");
   } else {
-    nav.classList.remove('nav-scrolled');
+    nav.classList.remove("nav-scrolled");
   }
 });
-

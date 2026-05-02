@@ -89,6 +89,14 @@ h6 {
   display: block;
   object-fit: cover;
 }
+.nav-scrolled {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  transform: scale(0.95);
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
 /* black navbar END */
 /* ------------------------NAVBAR END--------------------------- */
 /* ------------------------HEADER START------------------------------- */
@@ -141,19 +149,4 @@ h6 {
   height: auto;
   display: block;
   object-fit: cover;
-}
-.nav-scrolled {
-  transform: scale(0.95);
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-/* botton cart navbar  */
-.navRedBtn {
-  transform-style: preserve-3d;
-  transition: transform 0.6s;
-}
-.navRedBtn:hover {
-  background: var(--first-color);
-  transform: rotateY(180deg) scale(1.1);
-  box-shadow: var(--first-color);
 }
