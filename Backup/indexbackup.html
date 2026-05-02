@@ -37,14 +37,16 @@
     <link rel="stylesheet" href="./assests/Css/root.css" />
     <!-- OUR STYLE CSS -->
     <link rel="stylesheet" href="./assests/Css/style.css" />
+    <!-- MEDIA QUERY CSS -->
+    <link rel="stylesheet" href="./assests/Css/mediaQuery.css" />
   </head>
   <body>
-    <div class="">
+    <div class="customContainer customContainer-sm container-fluid">
       <!-- NAVBAR START-->
       <nav class="container-fluid">
         <div class="row">
           <!-- WHITE NAVBAR -->
-          <div class="col-md-12 d-none d-md-block whiteNav p-0">
+          <div class="col-md-12 d-none d-lg-block whiteNav p-0">
             <nav class="navbar-expand-lg h-100">
               <div
                 class="h-100 gap-4 d-flex align-items-center justify-content-end"
@@ -127,18 +129,157 @@
                 <div
                   class="cart d-flex align-items-center text-white justify-content-center"
                 >
-                  <iconify-icon
-                    icon="ic:sharp-shopping-cart"
-                    width="25"
-                    height="25"
-                    style="color: #fff"
-                  ></iconify-icon>
+                  <a href=""
+                    ><iconify-icon
+                      icon="ic:sharp-shopping-cart"
+                      width="25"
+                      height="25"
+                      style="color: #fff"
+                    ></iconify-icon
+                  ></a>
                 </div>
               </div>
             </nav>
           </div>
           <!-- BLACK NAVBAR -->
-          <div class="col-12bg-danger"></div>
+          <!-- SMALL  VERSION NAVBAR -->
+          <div class="col-12 p-0">
+            <nav class="navbar navbar-expand-xxl blackNav">
+              <!-- TOGGLER -->
+              <div
+                class="col-6 col-xxl-3 d-flex align-items-center px-0 px-md-3 py-0 py-md-1"
+              >
+                <div>
+                  <button
+                    class="navbar-toggler ps-0"
+                    type="button"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasExample"
+                    aria-controls="offcanvasExample"
+                  >
+                    <iconify-icon
+                      icon="quill:hamburger"
+                      width="30"
+                      height="30"
+                      style="color: #fff"
+                    ></iconify-icon>
+                  </button>
+                </div>
+                <div></div>
+                <!-- NAVBAR -->
+                <div>
+                  <img
+                    id="logoNav"
+                    src="./assests/imgs/icons/__0-313318851018.3692.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <!-- ICON NAV SMALL SCREEN -->
+              <div
+                class="col-4 d-flex align-items-center justify-content-end gap-2 d-xxl-none"
+              >
+                <iconify-icon
+                  icon="stash:search"
+                  width="30"
+                  height="30"
+                  style="color: #fff"
+                ></iconify-icon>
+                <iconify-icon
+                  icon="iconoir:profile-circle"
+                  width="30"
+                  height="30"
+                  style="color: #fff"
+                ></iconify-icon>
+                <iconify-icon
+                  icon="material-symbols-light:shopping-cart-outline-rounded"
+                  width="30"
+                  height="30"
+                  style="color: #fff"
+                  stroke-width="0.5"
+                  stroke="#fff"
+                ></iconify-icon>
+              </div>
+
+              <!-- OFFCANVAS -->
+              <div
+                class="offcanvas offcanvas-start d-xxl-none"
+                tabindex="-1"
+                id="offcanvasExample"
+                aria-labelledby="offcanvasExampleLabel"
+              >
+                <div class="offcanvas-header bg-tertiary">
+                  <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                    Offcanvas
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body">
+                  <div>
+                    Some text as placeholder. In real life you can have the
+                    elements you have chosen. Like, text, images, lists, etc.
+                  </div>
+                  <div class="dropdown mt-3">
+                    <button
+                      class="btn btn-secondary dropdown-toggle"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                    >
+                      Dropdown button
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- OFFCANVAS END -->
+              <!-- NAVBAR SMALL SCREEN END -->
+              <!-- NAVBAR LARGE SCREEN -->
+              <div
+                class="col-xxl-5 d-none d-xxl-flex position-relative d-flex align-items-center"
+              >
+                <form class="d-flex w-100" role="search">
+                  <input
+                    class="form-control me-2 customSearch"
+                    type="search"
+                    placeholder="Come possiamo aiutarti?"
+                    aria-label="Search"
+                  />
+                  <iconify-icon
+                    class="searchIcon"
+                    icon="stash:search"
+                    width="25"
+                    height="25"
+                    style="color: #686868"
+                  ></iconify-icon>
+                </form>
+              </div>
+              <div
+                class="d-none d-xxl-flex align-items-center justify-content-center w-100"
+              >
+                <img
+                  class="promoImg"
+                  src="https://www.nbastore.eu/content/ws/all/233cf258-fa7a-4f39-9839-c4fbc7f4aa18.svg"
+                  alt=""
+                />
+              </div>
+            </nav>
+          </div>
         </div>
       </nav>
       <!-- NAVBAR END -->
@@ -146,7 +287,7 @@
       <!-- HEADER START -->
       <header class="customHeader">
         <!-- HEADER NAVBAR -->
-        <nav class="container-fluid p-0 d-none d-md-block">
+        <nav class="container-fluid p-0 d-none d-xxl-block">
           <ul class="d-flex flex-nowrap overflow-auto">
             <li><a href="#">Shop By Team</a></li>
             <li><a href="#">Uomo</a></li>
@@ -167,7 +308,7 @@
           <div
             class="col-12 col-md-4 d-flex flex-column align-items-md-end text-center text-md-end mb-3 mb-md-0"
           >
-            <div>
+            <div class="d-md-flex flex-column align-items-md-start">
               <h3>Scegli la tua squadra</h3>
               <button class="costumButton">Visualizza tutto</button>
             </div>
@@ -176,10 +317,14 @@
         </section>
 
         <!-- HEADER IMAGE -->
-
         <img
-          class="headerPic img-fluid"
+          class="headerPic img-fluid d-none d-md-block"
           src="./assests/imgs/headerpic.avif"
+          alt=""
+        />
+        <img
+          class="img-fluid d-md-none d-block"
+          src="./assests/imgs/headerSmallpic.webp"
           alt=""
         />
       </header>
