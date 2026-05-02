@@ -20,10 +20,10 @@ h6 {
 
 /* CUSTOM CONTAINER */
 .customContainer {
-  max-width: 1600px;
+  max-width: 87%;
   margin: 0 auto;
 }
-/* NAVBAR */
+/* ------------------------NAVBAR--------------------------- */
 
 /* white navbar  */
 .whiteNav {
@@ -48,23 +48,52 @@ h6 {
   padding: 8px, 7px;
   background-color: #e61a4d;
 }
-
-/* black navbar */
+/* white navbar END */
+/* black navbar START */
 .blackNav {
-  background-color: rgb(255, 255, 255);
-  z-index: -1;
+  background-color: rgb(0, 0, 0);
+  padding: 10px 16px;
 }
-
-/* NBA logo */
-.LogoNav img {
-  max-width: 60%;
+#logoNav {
+  width: 85%;
+  padding: 0px 0px;
   height: auto;
+  display: inline-block;
+  vertical-align: middle;
 }
-/* navbar list */
-
+.customSearch {
+  font-size: 13px;
+  border-radius: 3px;
+  padding: 0.5rem;
+}
+.customSearch::placeholder {
+  font-size: 13px;
+}
+.customSearch:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+.searchIcon {
+  position: absolute;
+  right: 2.5%;
+  top: 50%;
+  transform: translate(0, -50%);
+  color: #000;
+  cursor: pointer;
+}
+.promoImg {
+  width: 25%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+/* black navbar END */
+/* ------------------------NAVBAR END--------------------------- */
+/* ------------------------HEADER START------------------------------- */
 /* HEADER */
 
-/* navbar header */
+/* LIST NAV header */
 .customHeader ul {
   background-color: var(--first-color);
   padding: 0;
@@ -108,14 +137,14 @@ h6 {
 
 .headerPic {
   width: 100%;
-  height: 100%;
+  height: auto;
   display: block;
   object-fit: cover;
 }
 .nav-scrolled {
   transform: scale(0.95);
   transition: all 0.3s ease;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 /* botton cart navbar  */
 .navRedBtn {
