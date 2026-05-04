@@ -100,9 +100,8 @@ h6 {
 /* black navbar END */
 /* scrolled navbar */
 .offcanvasLogo {
-  width: 124px; 
-  height: 40px;;
-  
+  width: 124px;
+  height: 40px;
 }
 /* btn-groupNav canvas */
 .btn-groupNav {
@@ -112,9 +111,9 @@ h6 {
 }
 /* button cavas end */
 .btn-secondary {
-  background-color:var(--white-color);
+  background-color: var(--white-color);
   border: none;
-  color: rgb(0, 0, 0);!important;
+  color: rgb(0, 0, 0) !important;
   padding: 5px 10px;
   text-align: center;
   text-decoration: none;
@@ -122,24 +121,8 @@ h6 {
   font-size: 15px;
   cursor: pointer;
   width: 30%;
-} 
-/* dropdown-toggle-left button */
-.dropdown-toggle-left {
-  padding-right: 3rem !important; /* spazio per la freccia */
-  text-align: left;
-  position: relative;
 }
-
-.dropdown-toggle-left::after {
-  position: absolute;
-  right: 0.75rem;
-  top: 50%;
-  transform: translateY(-50%);
-  content: "";
-  border: solid 0.2rem transparent;
-  border-left-color: currentColor; /* freccia destra */
-  opacity: 0.6;
-}
+/* black navbar END */
 /* ------------------------NAVBAR END--------------------------- */
 /* ------------------------HEADER START------------------------------- */
 /* HEADER */
