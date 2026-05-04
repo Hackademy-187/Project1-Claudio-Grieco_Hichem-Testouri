@@ -100,7 +100,7 @@ h6 {
 /* scrolled navbar */
 .offcanvasLogo {
   width: 124px;
-  height: 40px;;
+  height: 40px;
 }
 /* btn-groupNav canvas */
 .btn-groupNav {
@@ -110,9 +110,9 @@ h6 {
 }
 /* button cavas end */
 .btn-secondary {
-  background-color:var(--white-color);
+  background-color: var(--white-color);
   border: none;
-  color: rgb(0, 0, 0);!important;
+  color: rgb(0, 0, 0) !important;
   padding: 5px 10px;
   text-align: center;
   text-decoration: none;
@@ -120,7 +120,7 @@ h6 {
   font-size: 15px;
   cursor: pointer;
   width: 30%;
-}   
+}
 /* black navbar END */
 /* ------------------------NAVBAR END--------------------------- */
 /* ------------------------HEADER START------------------------------- */
