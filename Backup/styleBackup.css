@@ -47,6 +47,7 @@ h6 {
   height: 40px;
   padding: 8px, 7px;
   background-color: #e61a4d;
+  cursor: pointer;
 }
 /* white navbar END */
 /* black navbar START */
@@ -88,7 +89,57 @@ h6 {
   display: block;
   object-fit: cover;
 }
+.nav-scrolled {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  transform: scale(0.95);
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
 /* black navbar END */
+/* scrolled navbar */
+.offcanvasLogo {
+  width: 124px; 
+  height: 40px;;
+  
+}
+/* btn-groupNav canvas */
+.btn-groupNav {
+  display: flex;
+  text-align: start;
+  flex-direction: column;
+}
+/* button cavas end */
+.btn-secondary {
+  background-color:var(--white-color);
+  border: none;
+  color: rgb(0, 0, 0);!important;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  cursor: pointer;
+  width: 30%;
+} 
+/* dropdown-toggle-left button */
+.dropdown-toggle-left {
+  padding-right: 3rem !important; /* spazio per la freccia */
+  text-align: left;
+  position: relative;
+}
+
+.dropdown-toggle-left::after {
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  content: "";
+  border: solid 0.2rem transparent;
+  border-left-color: currentColor; /* freccia destra */
+  opacity: 0.6;
+}
 /* ------------------------NAVBAR END--------------------------- */
 /* ------------------------HEADER START------------------------------- */
 /* HEADER */
@@ -140,19 +191,4 @@ h6 {
   height: auto;
   display: block;
   object-fit: cover;
-}
-.nav-scrolled {
-  transform: scale(0.95);
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-/* botton cart navbar  */
-.navRedBtn {
-  transform-style: preserve-3d;
-  transition: transform 0.6s;
-}
-.navRedBtn:hover {
-  background: var(--first-color);
-  transform: rotateY(180deg) scale(1.1);
-  box-shadow: var(--first-color);
 }
