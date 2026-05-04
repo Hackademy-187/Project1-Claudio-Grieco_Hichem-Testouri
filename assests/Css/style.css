@@ -122,7 +122,23 @@ h6 {
   cursor: pointer;
   width: 30%;
 }
-/* black navbar END */
+/* dropdown-toggle-left button */
+.dropdown-toggle-left {
+  padding-right: 3rem !important; /* spazio per la freccia */
+  text-align: left;
+  position: relative;
+}
+
+.dropdown-toggle-left::after {
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  content: "";
+  border: solid 0.2rem transparent;
+  border-left-color: currentColor; /* freccia destra */
+  opacity: 0.6;
+}
 /* ------------------------NAVBAR END--------------------------- */
 /* ------------------------HEADER START------------------------------- */
 /* HEADER */
@@ -175,3 +191,5 @@ h6 {
   display: block;
   object-fit: cover;
 }
+
+/* ------------------------HEADER END------------------------------- */
