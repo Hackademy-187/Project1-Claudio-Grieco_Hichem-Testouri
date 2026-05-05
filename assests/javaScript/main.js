@@ -1,10 +1,10 @@
-// NAVBAR SCROLL EFFECT
-let nav = document.querySelector(".containerNav");
-let scrollPos = 0;
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 50) {
-    nav.classList.add("nav-scrolled");
-  } else {
-    nav.classList.remove("nav-scrolled");
-  }
-});
+fetch("../../teams.json")
+  .then((res) => res.json())
+  .then((data) => {
+    const params = new URLSearchParams(window.location.search);
+    const teamId = params.get("team");
+    const selectedTeam = data.teams.find((t) => t.id === teamId);
+    console.log(teamId);
+
+    let navbarShop = document.querySelector(".shop");
+  });

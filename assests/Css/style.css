@@ -239,7 +239,7 @@ h6 {
 /* navbar chicago end */
 /* header navbar chicago */
 .customHeaderChicago ul {
-  background-color: var(--first-color);
+  background-color: var(--black-color);
   padding: 0;
   width: auto;
 }
@@ -259,6 +259,6 @@ h6 {
   font-size: 14px;
 }
 .customHeaderChicago ul li:hover {
-  background-color: #335ba7;
+  background-color: #ff0505;
   cursor: pointer;
 }

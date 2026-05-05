@@ -1,20 +1,500 @@
-[
-  {
-    "id": "1",
-    "name": "Team 1"
-  },
-  {
-    "id": "2",
-    "name": "chicago bulls",
-    "articles": [
-      {
-        "id": "1",
-        "title": "Article 1"
-      },
-      {
-        "id": "2",
-        "title": "Article 2"
-      }
-    ]
-  }
-]
+{
+  "teams": [
+    {
+      "id": "bulls",
+      "name": "Chicago Bulls",
+      "colors": { "primary": "#CE1141", "secondary": "#000000" },
+      "logo": "https://www.nbastore.eu/content/assets/NBA_Chicago_Bulls_3361-163881907120.23685.svg",
+      "products": [
+        {
+          "type": "felpa",
+          "category": "uomo",
+          "name": "Bulls Felpa Uomo",
+          "price": 70
+        },
+        {
+          "type": "tshirt",
+          "category": "uomo",
+          "name": "Bulls T-Shirt Uomo",
+          "price": 35
+        },
+        {
+          "type": "maglia",
+          "category": "uomo",
+          "name": "Bulls Maglia Gara Uomo",
+          "price": 95
+        },
+        {
+          "type": "felpa",
+          "category": "donna",
+          "name": "Bulls Felpa Donna",
+          "price": 65
+        },
+        {
+          "type": "tshirt",
+          "category": "donna",
+          "name": "Bulls T-Shirt Donna",
+          "price": 30
+        },
+        {
+          "type": "maglia",
+          "category": "donna",
+          "name": "Bulls Maglia Gara Donna",
+          "price": 90
+        },
+        {
+          "type": "felpa",
+          "category": "bimbo",
+          "name": "Bulls Felpa Bambino",
+          "price": 50
+        },
+        {
+          "type": "tshirt",
+          "category": "bimbo",
+          "name": "Bulls T-Shirt Bambino",
+          "price": 25
+        },
+        {
+          "type": "maglia",
+          "category": "bimbo",
+          "name": "Bulls Maglia Gara Bambino",
+          "price": 70
+        }
+      ]
+    },
+    {
+      "id": "lakers",
+      "name": "Los Angeles Lakers",
+      "colors": { "primary": "#330072", "secondary": "#FDB927" },
+      "logo": "https://www.nbastore.eu/content/assets/NBA_Los_Angeles_Lakers_3372-1709007091616.4268.svg",
+      "products": [
+        {
+          "type": "felpa",
+          "category": "uomo",
+          "name": "Lakers Felpa Uomo",
+          "price": 70
+        },
+        {
+          "type": "tshirt",
+          "category": "uomo",
+          "name": "Lakers T-Shirt Uomo",
+          "price": 35
+        },
+        {
+          "type": "maglia",
+          "category": "uomo",
+          "name": "Lakers Maglia Gara Uomo",
+          "price": 95
+        },
+        {
+          "type": "felpa",
+          "category": "donna",
+          "name": "Lakers Felpa Donna",
+          "price": 65
+        },
+        {
+          "type": "tshirt",
+          "category": "donna",
+          "name": "Lakers T-Shirt Donna",
+          "price": 30
+        },
+        {
+          "type": "maglia",
+          "category": "donna",
+          "name": "Lakers Maglia Gara Donna",
+          "price": 90
+        },
+        {
+          "type": "felpa",
+          "category": "bimbo",
+          "name": "Lakers Felpa Bambino",
+          "price": 50
+        },
+        {
+          "type": "tshirt",
+          "category": "bimbo",
+          "name": "Lakers T-Shirt Bambino",
+          "price": 25
+        },
+        {
+          "type": "maglia",
+          "category": "bimbo",
+          "name": "Lakers Maglia Gara Bambino",
+          "price": 70
+        }
+      ]
+    },
+    {
+      "id": "heat",
+      "name": "Miami Heat",
+      "colors": { "primary": "#000000", "secondary": "#98002E" },
+      "logo": "https://www.nbastore.eu/content/assets/NBA_Miami_Heat_3374-1192499944399.8809.svg",
+      "products": [
+        {
+          "type": "felpa",
+          "category": "uomo",
+          "name": "Heat Felpa Uomo",
+          "price": 70
+        },
+        {
+          "type": "tshirt",
+          "category": "uomo",
+          "name": "Heat T-Shirt Uomo",
+          "price": 35
+        },
+        {
+          "type": "maglia",
+          "category": "uomo",
+          "name": "Heat Maglia Gara Uomo",
+          "price": 95
+        },
+        {
+          "type": "felpa",
+          "category": "donna",
+          "name": "Heat Felpa Donna",
+          "price": 65
+        },
+        {
+          "type": "tshirt",
+          "category": "donna",
+          "name": "Heat T-Shirt Donna",
+          "price": 30
+        },
+        {
+          "type": "maglia",
+          "category": "donna",
+          "name": "Heat Maglia Gara Donna",
+          "price": 90
+        },
+        {
+          "type": "felpa",
+          "category": "bimbo",
+          "name": "Heat Felpa Bambino",
+          "price": 50
+        },
+        {
+          "type": "tshirt",
+          "category": "bimbo",
+          "name": "Heat T-Shirt Bambino",
+          "price": 25
+        },
+        {
+          "type": "maglia",
+          "category": "bimbo",
+          "name": "Heat Maglia Gara Bambino",
+          "price": 70
+        }
+      ]
+    },
+    {
+      "id": "warriors",
+      "name": "Golden State Warriors",
+      "colors": { "primary": "#1D428A", "secondary": "#FDB927" },
+      "logo": "https://www.nbastore.eu/content/assets/NBA_Golden_State_Warriors_3367-30174213355.82176.svg",
+      "products": [
+        {
+          "type": "felpa",
+          "category": "uomo",
+          "name": "Warriors Felpa Uomo",
+          "price": 70
+        },
+        {
+          "type": "tshirt",
+          "category": "uomo",
+          "name": "Warriors T-Shirt Uomo",
+          "price": 35
+        },
+        {
+          "type": "maglia",
+          "category": "uomo",
+          "name": "Warriors Maglia Gara Uomo",
+          "price": 95
+        },
+        {
+          "type": "felpa",
+          "category": "donna",
+          "name": "Warriors Felpa Donna",
+          "price": 65
+        },
+        {
+          "type": "tshirt",
+          "category": "donna",
+          "name": "Warriors T-Shirt Donna",
+          "price": 30
+        },
+        {
+          "type": "maglia",
+          "category": "donna",
+          "name": "Warriors Maglia Gara Donna",
+          "price": 90
+        },
+        {
+          "type": "felpa",
+          "category": "bimbo",
+          "name": "Warriors Felpa Bambino",
+          "price": 50
+        },
+        {
+          "type": "tshirt",
+          "category": "bimbo",
+          "name": "Warriors T-Shirt Bambino",
+          "price": 25
+        },
+        {
+          "type": "maglia",
+          "category": "bimbo",
+          "name": "Warriors Maglia Gara Bambino",
+          "price": 70
+        }
+      ]
+    },
+    {
+      "id": "celtics",
+      "name": "Boston Celtics",
+      "colors": { "primary": "#008348", "secondary": "#000000" },
+      "logo": "https://www.nbastore.eu/content/assets/NBA_Boston_Celtics_3358-1376821775829.0422.svg",
+      "products": [
+        {
+          "type": "felpa",
+          "category": "uomo",
+          "name": "Celtics Felpa Uomo",
+          "price": 70
+        },
+        {
+          "type": "tshirt",
+          "category": "uomo",
+          "name": "Celtics T-Shirt Uomo",
+          "price": 35
+        },
+        {
+          "type": "maglia",
+          "category": "uomo",
+          "name": "Celtics Maglia Gara Uomo",
+          "price": 95
+        },
+        {
+          "type": "felpa",
+          "category": "donna",
+          "name": "Celtics Felpa Donna",
+          "price": 65
+        },
+        {
+          "type": "tshirt",
+          "category": "donna",
+          "name": "Celtics T-Shirt Donna",
+          "price": 30
+        },
+        {
+          "type": "maglia",
+          "category": "donna",
+          "name": "Celtics Maglia Gara Donna",
+          "price": 90
+        },
+        {
+          "type": "felpa",
+          "category": "bimbo",
+          "name": "Celtics Felpa Bambino",
+          "price": 50
+        },
+        {
+          "type": "tshirt",
+          "category": "bimbo",
+          "name": "Celtics T-Shirt Bambino",
+          "price": 25
+        },
+        {
+          "type": "maglia",
+          "category": "bimbo",
+          "name": "Celtics Maglia Gara Bambino",
+          "price": 70
+        }
+      ]
+    },
+    {
+      "id": "mavericks",
+      "name": "Dallas Mavericks",
+      "colors": { "primary": "#0053BC", "secondary": "#00285E" },
+      "logo": "https://www.nbastore.eu/content/assets/NBA_Dallas_Mavericks_3363-1114327120936.4902.svg",
+      "products": [
+        {
+          "type": "felpa",
+          "category": "uomo",
+          "name": "Mavericks Felpa Uomo",
+          "price": 70
+        },
+        {
+          "type": "tshirt",
+          "category": "uomo",
+          "name": "Mavericks T-Shirt Uomo",
+          "price": 35
+        },
+        {
+          "type": "maglia",
+          "category": "uomo",
+          "name": "Mavericks Maglia Gara Uomo",
+          "price": 95
+        },
+        {
+          "type": "felpa",
+          "category": "donna",
+          "name": "Mavericks Felpa Donna",
+          "price": 65
+        },
+        {
+          "type": "tshirt",
+          "category": "donna",
+          "name": "Mavericks T-Shirt Donna",
+          "price": 30
+        },
+        {
+          "type": "maglia",
+          "category": "donna",
+          "name": "Mavericks Maglia Gara Donna",
+          "price": 90
+        },
+        {
+          "type": "felpa",
+          "category": "bimbo",
+          "name": "Mavericks Felpa Bambino",
+          "price": 50
+        },
+        {
+          "type": "tshirt",
+          "category": "bimbo",
+          "name": "Mavericks T-Shirt Bambino",
+          "price": 25
+        },
+        {
+          "type": "maglia",
+          "category": "bimbo",
+          "name": "Mavericks Maglia Gara Bambino",
+          "price": 70
+        }
+      ]
+    },
+    {
+      "id": "knicks",
+      "name": "New York Knicks",
+      "colors": { "primary": "#006BB6", "secondary": "#F58426" },
+      "logo": "https://www.nbastore.eu/content/assets/NBA_New_York_Knicks_3378-228415205432.52063.svg",
+      "products": [
+        {
+          "type": "felpa",
+          "category": "uomo",
+          "name": "Knicks Felpa Uomo",
+          "price": 70
+        },
+        {
+          "type": "tshirt",
+          "category": "uomo",
+          "name": "Knicks T-Shirt Uomo",
+          "price": 35
+        },
+        {
+          "type": "maglia",
+          "category": "uomo",
+          "name": "Knicks Maglia Gara Uomo",
+          "price": 95
+        },
+        {
+          "type": "felpa",
+          "category": "donna",
+          "name": "Knicks Felpa Donna",
+          "price": 65
+        },
+        {
+          "type": "tshirt",
+          "category": "donna",
+          "name": "Knicks T-Shirt Donna",
+          "price": 30
+        },
+        {
+          "type": "maglia",
+          "category": "donna",
+          "name": "Knicks Maglia Gara Donna",
+          "price": 90
+        },
+        {
+          "type": "felpa",
+          "category": "bimbo",
+          "name": "Knicks Felpa Bambino",
+          "price": 50
+        },
+        {
+          "type": "tshirt",
+          "category": "bimbo",
+          "name": "Knicks T-Shirt Bambino",
+          "price": 25
+        },
+        {
+          "type": "maglia",
+          "category": "bimbo",
+          "name": "Knicks Maglia Gara Bambino",
+          "price": 70
+        }
+      ]
+    },
+    {
+      "id": "thunder",
+      "name": "Oklahoma City Thunder",
+      "colors": { "primary": "#007AC1", "secondary": "#EF3B24" },
+      "logo": "https://www.nbastore.eu/content/assets/NBA_Oklahoma_City_Thunder_3379-864915250024.7834.svg",
+      "products": [
+        {
+          "type": "felpa",
+          "category": "uomo",
+          "name": "Thunder Felpa Uomo",
+          "price": 70
+        },
+        {
+          "type": "tshirt",
+          "category": "uomo",
+          "name": "Thunder T-Shirt Uomo",
+          "price": 35
+        },
+        {
+          "type": "maglia",
+          "category": "uomo",
+          "name": "Thunder Maglia Gara Uomo",
+          "price": 95
+        },
+        {
+          "type": "felpa",
+          "category": "donna",
+          "name": "Thunder Felpa Donna",
+          "price": 65
+        },
+        {
+          "type": "tshirt",
+          "category": "donna",
+          "name": "Thunder T-Shirt Donna",
+          "price": 30
+        },
+        {
+          "type": "maglia",
+          "category": "donna",
+          "name": "Thunder Maglia Gara Donna",
+          "price": 90
+        },
+        {
+          "type": "felpa",
+          "category": "bimbo",
+          "name": "Thunder Felpa Bambino",
+          "price": 50
+        },
+        {
+          "type": "tshirt",
+          "category": "bimbo",
+          "name": "Thunder T-Shirt Bambino",
+          "price": 25
+        },
+        {
+          "type": "maglia",
+          "category": "bimbo",
+          "name": "Thunder Maglia Gara Bambino",
+          "price": 70
+        }
+      ]
+    }
+  ]
+}
