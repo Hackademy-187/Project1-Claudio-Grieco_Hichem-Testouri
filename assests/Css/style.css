@@ -230,3 +230,28 @@ h6 {
   padding: 10px 16px;
 }
 /* navbar chicago end */
+/* header navbar chicago */
+.customHeaderChicago ul {
+  background-color: var(--first-color);
+  padding: 0;
+  width: auto;
+}
+.customHeaderChicago ul li {
+  list-style-type: none; /* */
+  text-align: center; /* */
+  width: 100%; /* Change from 100px to auto */
+  white-space: nowrap; /* Force text onto one line */
+  padding: 0 10px;
+}
+.customHeaderChicago ul li a {
+  line-height: 2.1875rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+}
+.customHeaderChicago ul li:hover {
+  background-color: #335ba7;
+  cursor: pointer;
+}
