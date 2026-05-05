@@ -217,6 +217,13 @@ h6 {
   text-align: center;
 }
 /* ------------------------HEADER END------------------------------- */
+.separatorPic {
+  width: 80%;
+  height: 200px;
+  margin: 20px auto;
+  padding: auto;
+}
+/* ------------------------SEPARTE PIC START------------------------------- */
 /* navbar chicago  */
 #logoNavChicago {
   width: 95%;
@@ -226,7 +233,7 @@ h6 {
   vertical-align: middle;
 }
 .RednavChicago {
-  background-color: var(--second-color);
+  background-color: #ce1141;
   padding: 10px 16px;
 }
 /* navbar chicago end */
