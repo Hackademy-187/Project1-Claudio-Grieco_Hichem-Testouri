@@ -217,3 +217,16 @@ h6 {
   text-align: center;
 }
 /* ------------------------HEADER END------------------------------- */
+/* navbar chicago  */
+#logoNavChicago {
+  width: 95%;
+  padding: 0px 0px;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+.RednavChicago {
+  background-color: var(--second-color);
+  padding: 10px 16px;
+}
+/* navbar chicago end */
