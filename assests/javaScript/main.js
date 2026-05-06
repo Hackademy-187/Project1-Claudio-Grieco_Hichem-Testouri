@@ -12,6 +12,9 @@ fetch("../../teams.json")
     let secNav = document.querySelector("#secNav");
     let imgNav = document.querySelector("#logoNav");
     let headerPic = document.querySelector("#headerPic");
+    let filterBtns = document.querySelectorAll(
+      ".accordion-button:not(.collapsed)",
+    );
 
     if (selectedTeam) {
       navbarShop.style.backgroundColor = colorPrimary;
@@ -20,6 +23,18 @@ fetch("../../teams.json")
       imgNav.src = teamLogo;
       imgNav.alt = `${selectedTeam.name} logo`;
       headerPic.src = selectedTeam.headerpic;
+      document.documentElement.style.setProperty(
+        "--selection-color",
+        colorPrimary,
+      );
+      document.documentElement.style.setProperty(
+        "--selection2-color",
+        colorSecondary,
+      );
+      filterBtns.forEach((btn) => {
+        btn.style.backgroundColor = colorPrimary;
+        btn.style.color = colorSecondary;
+      });
     } else {
       navbarShop.style.backgroundColor = "#000";
       secNav.style.backgroundColor = "#0000ff";
@@ -30,26 +45,43 @@ let btnDarkMode = document.querySelector(".btnDarkMode");
 let isClicked = false;
 let whiteNav = document.querySelector(".whiteNav");
 let costumButton = document.querySelector(".costumButton");
+// localStorage
+
+function darkMode() {
+  document.body.style.backgroundColor = "#151727";
+  document.body.style.color = "#fff";
+  document.querySelector(".whiteNav").style.backgroundColor = "#23264e80";
+  document.querySelector(".whiteNav").style.color = "#fff";
+  document.querySelector(".costumButton").style.backgroundColor = "#fff";
+  document.querySelector(".costumButton").style.color = "#000";
+  isClicked = false;
+  btnDarkMode.innerHTML = `<i class="fa-sharp fa-solid fa-sun" style="color: rgb(219, 211, 4);"></i>`;
+}
+
+function lightMode() {
+  document.body.style.backgroundColor = "#fff";
+  document.body.style.color = "#000000";
+  document.querySelector(".whiteNav").style.backgroundColor = "#fff";
+  document.querySelector(".whiteNav").style.color = "#000000";
+  document.querySelector(".costumButton").style.backgroundColor = "#000000";
+  document.querySelector(".costumButton").style.color = "#fff";
+  isClicked = true;
+  btnDarkMode.innerHTML = `<i class="fa-sharp fa-solid fa-moon" style="color: rgb(255, 255, 255);"></i>`;
+}
 
 btnDarkMode.addEventListener("click", () => {
   if (isClicked) {
-    document.body.style.backgroundColor = "#000";
-    document.body.style.color = "#fff";
-    document.querySelector(".whiteNav").style.backgroundColor = "#000";
-    document.querySelector(".whiteNav").style.color = "#fff";
-    document.querySelector(".costumButton").style.backgroundColor = "#fff";
-    document.querySelector(".costumButton").style.color = "#000";
-    isClicked = false;
-    btnDarkMode.innerHTML = `<i class="fa-sharp fa-solid fa-sun" style="color: rgb(219, 211, 4);"></i>`;
+    darkMode();
+    let mode = localStorage.setItem("mode", "dark");
   } else {
-    document.body.style.backgroundColor = "#fff";
-    document.body.style.color = "#000";
-    document.querySelector(".whiteNav").style.backgroundColor = "#fff";
-    document.querySelector(".whiteNav").style.color = "#000";
-    document.querySelector(".costumButton").style.backgroundColor = "#000";
-    document.querySelector(".costumButton").style.color = "#fff";
-    isClicked = true;
-    btnDarkMode.innerHTML = `<i class="fa-sharp fa-solid fa-moon" style="color: rgb(255, 255, 255);"></i>`;   
+    lightMode();
+    let mode = localStorage.setItem("mode", "light");
   }
 });
-// 
+let mode = localStorage.getItem("mode");
+// DARK MODE SETTING
+if (mode === "dark") {
+  darkMode();
+} else {
+  lightMode();
+}
