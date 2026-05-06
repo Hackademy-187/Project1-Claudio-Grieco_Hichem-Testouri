@@ -327,3 +327,10 @@ h6 {
 hr {
   color: #ff0000;
 }
+/* darkmode button */
+.btnDarkMode {
+  background-color: var(--black-color);
+  border: none;
+  cursor: pointer;
+  padding-right: 10px;
+}
