@@ -36,40 +36,53 @@
           "price": 95
         },
         {
+          "img": "./assests/img/chicago Bulls/donna/felpa donna 1 chicago.avif", 
           "type": "felpa",
           "category": "donna",
           "name": "Bulls Felpa Donna",
           "price": 65
         },
         {
-          "type": "tshirt",
-          "category": "donna",
-          "name": "Bulls T-Shirt Donna",
-          "price": 30
-        },
-        {
-          "type": "maglia",
-          "category": "donna",
-          "name": "Bulls Maglia Gara Donna",
-          "price": 90
-        },
-        {
+          "img": "./assests/img/chicago Bulls/donna/tshirt donna 2 chicago.avif",
           "type": "felpa",
-          "category": "bimbo",
-          "name": "Bulls Felpa Bambino",
+          "category": "donna",
+          "name": "Bulls Felpa Donna",
+          "price": 65
+        },
+        {
+          "img": "./assests/img/chicago Bulls/donna/pantaloncini donna 1 chicago.avif",
+          "type": "maglia gara",
+          "category": "donna",
+          "name": "Bulls Pantaloncini Gara Donna",
           "price": 50
         },
         {
+          "img": "./assests/img/chicago Bulls/donna/t-shirt gara.jpg",
+          "type": "maglia gara",
+          "category": "donna",
+          "name": "Bulls Maglia Gara Donna",
+          "price": 80
+        },
+        {
+          "img": "./assests/img/chicago Bulls/bimbo/felpa bimbo 1 chicago.avif",
+          "type": "felpa",
+          "category": "bimbo",
+          "name": "Bulls Completo Gara Bambino",
+          "price": 50
+        },
+        {
+          "img": "./assests/img/chicago Bulls/bimbo/tshirt bimbo 1 chicago.avif",
           "type": "tshirt",
           "category": "bimbo",
           "name": "Bulls T-Shirt Bambino",
           "price": 25
         },
         {
+          "img": "./assests/img/chicago Bulls/bimbo/pantaloncino bimbo 1 chicago.avif",
           "type": "maglia",
           "category": "bimbo",
-          "name": "Bulls Maglia Gara Bambino",
-          "price": 70
+          "name": "Bulls Pantaloncino Gara Bambino",
+          "price": 25
         }
       ]
     },
@@ -81,52 +94,67 @@
       "headerpic": "https://cdn.nba.com/teams/legacy/www.nba.com/lakers/sites/lakers/files/gettyimages-1204233988.jpg",
       "products": [
         {
-          "type": "felpa",
-          "category": "uomo",
-          "name": "Lakers Felpa Uomo",
-          "price": 70
-        },
-        {
-          "type": "tshirt",
-          "category": "uomo",
-          "name": "Lakers T-Shirt Uomo",
-          "price": 35
-        },
-        {
+          "img": "./assests/img/los angeles lakers/uomo/uomo maglia lak 1.avif",
           "type": "maglia",
           "category": "uomo",
           "name": "Lakers Maglia Gara Uomo",
           "price": 95
         },
         {
+          "img": "./assests/img/los angeles lakers/uomo/uomo maglia lak 2.avif",
+          "type": "maglia gara",
+          "category": "uomo",
+          "name": "Lakers Maglia Gara Uomo",
+          "price": 95
+        },
+        {
+          "img": "./assests/img/los angeles lakers/uomo/uomo maglia lak 3.avif",
+          "type": "maglia",
+          "category": "uomo",
+          "name": "Lakers Maglia Gara Uomo",
+          "price": 95
+        },
+        {
+          "img": "./assests/img/los angeles lakers/donna/felpa 1 donna lak.avif",
           "type": "felpa",
           "category": "donna",
           "name": "Lakers Felpa Donna",
           "price": 65
         },
         {
-          "type": "tshirt",
+          "img": "./assests/img/los angeles lakers/donna/felpa donna 2 lak.avif",
+          "type": "felpa",
           "category": "donna",
-          "name": "Lakers T-Shirt Donna",
-          "price": 30
+          "name": "Lakers Felpa Donna",
+          "price": 65
         },
         {
+          "img": "./assests/img/los angeles lakers/donna/felpa donna 3 lak.avif",
+          "type": "felpa",
+          "category": "donna",
+          "name": "Lakers Felpa Donna",
+          "price": 65
+        },
+        {
+          "img": "./assests/img/los angeles lakers/bambino bimbo lak 1.avif",
           "type": "maglia",
-          "category": "donna",
-          "name": "Lakers Maglia Gara Donna",
-          "price": 90
+          "category": "bimbo",
+          "name": "Lakers Maglia Gara Bambino",
+          "price": 60
         },
         {
+          "img": "./assests/img/los angeles lakers/bambino bimbo lak 2.avif",
+          "type": "maglia",
+          "category": "bimbo",
+          "name": "Lakers Maglia Gara Bambino",
+          "price": 60
+        },
+        {
+          "img": "./assests/img/los angeles lakers/bambino felpa bimbo 3 lak.avif",
           "type": "felpa",
           "category": "bimbo",
           "name": "Lakers Felpa Bambino",
           "price": 50
-        },
-        {
-          "type": "tshirt",
-          "category": "bimbo",
-          "name": "Lakers T-Shirt Bambino",
-          "price": 25
         },
         {
           "type": "maglia",
@@ -144,58 +172,74 @@
       "headerpic": "https://library.sportingnews.com/styles/twitter_card_120x120/s3/2025-11/Heat%20Jaime%20Jaquez%20Tyler%20Herro%20Bam%20Adebayo_0.jpg?itok=JSLYBeHe",
       "products": [
         {
-          "type": "felpa",
-          "category": "uomo",
-          "name": "Heat Felpa Uomo",
-          "price": 70
-        },
-        {
-          "type": "tshirt",
-          "category": "uomo",
-          "name": "Heat T-Shirt Uomo",
-          "price": 35
-        },
-        {
-          "type": "maglia",
+          "img" : "./assests/img/miami heat/uomo magla 1 uomo miami.avif",
+          "type": "maglia gara",
           "category": "uomo",
           "name": "Heat Maglia Gara Uomo",
           "price": 95
         },
         {
-          "type": "felpa",
-          "category": "donna",
-          "name": "Heat Felpa Donna",
-          "price": 65
+          "img" : "./assests/img/miami heat/uomo maglia 2 uomo miami.avif",
+          "type": "maglia gara",
+          "category": "uomo",
+          "name": "Heat Maglia Gara Uomo",
+          "price": 95
         },
         {
-          "type": "tshirt",
-          "category": "donna",
-          "name": "Heat T-Shirt Donna",
-          "price": 30
+          "img" : "./assests/img/miami heat/uomo giubbotto 1 uomo miami.avif",
+          "type": "giubbotto",
+          "category": "uomo",
+          "name": "Heat Giubbotto Uomo",
+          "price": 120
         },
         {
+          "img" : "./assests/img/miami heat/donna maglia 1 donna miami.avif",
           "type": "maglia",
+          "category": "donna",
+          "name": "Heat Maglia Donna",
+          "price": 60
+        },
+        {
+          "img" : "./assests/img/miami heat/donna maglia 2 donna miami.avif",
+          "type": "maglia",
+          "category": "donna",
+          "name": "Heat Maglia Donna",
+          "price": 60
+        },
+        {
+          "img" : "./assests/img/miami heat/donna maglia 3 donna miami.avif", 
+          "type": "maglia gara",
           "category": "donna",
           "name": "Heat Maglia Gara Donna",
           "price": 90
         },
         {
-          "type": "felpa",
+          "img" : "./assests/img/miami heat/donna maglia 4 donna miami.avif", 
+          "type": "maglia ",
+          "category": "donna",
+          "name": "Heat Maglia Donna",
+          "price": 60
+        },
+        {
+          "img" : "./assests/img/miami heat/bambino maglia 1 bambino miami.avif",
+          "type": "maglia",
           "category": "bimbo",
-          "name": "Heat Felpa Bambino",
+          "name": "Heat Maglia Bambino",
           "price": 50
         },
         {
-          "type": "tshirt",
+            "img" : "./assests/img/miami heat/bambino maglia 1 bambino miami.avif",
+          "type": "maglia ",
           "category": "bimbo",
-          "name": "Heat T-Shirt Bambino",
-          "price": 25
+          "name": "Heat Maglia Bambino",
+          "price": 50
         },
         {
-          "type": "maglia",
+              "img" : "./assests/img/miami heat/bambino pantaloncino 1 bambino miami.avif",
+          "type": "maglia gara",
           "category": "bimbo",
-          "name": "Heat Maglia Gara Bambino",
-          "price": 70
+          "name": "Heat Pantaloncino Bambino",
+          "price": 40
         }
       ]
     },
@@ -206,60 +250,62 @@
       "logo": "https://www.nbastore.eu/content/assets/NBA_Golden_State_Warriors_3367-30174213355.82176.svg",
       "headerpic": "https://sport.sky.it/assets/images/09d9231b6f13882e2dfce36d75c2ecf1654ebec1/skysport/it/nba/2022/05/01/playoff-nba-memphis-golden-state-gara-1-risultato-highlights/thompson_warriors_cover.jpg",
       "products": [
+            {
+              "img" : "./assests/img/gsw/uomo/uomo 1 maglia gsw.avif",
+              "type": "maglia ",
+              "category": "uomo",
+              "name": "Warriors Maglia Gara Uomo",
+              "price": 90
+            },
         {
-          "type": "felpa",
-          "category": "uomo",
-          "name": "Warriors Felpa Uomo",
-          "price": 70
-        },
+              "img" : "./assests/img/gsw/uomo/uomo 2 maglia gsw.avif",
+              "type": "maglia ",
+              "category": "uomo",
+              "name": "Warriors Maglia Gara Uomo",
+              "price": 90
+            },
         {
-          "type": "tshirt",
-          "category": "uomo",
-          "name": "Warriors T-Shirt Uomo",
-          "price": 35
-        },
+              "img" : "./assests/img/gsw/uomo/uomo 3 maglia gsw.avif",
+              "type": "maglia ",
+              "category": "uomo",
+              "name": "Warriors Maglia Gara Uomo",
+              "price": 90
+            },
         {
-          "type": "maglia",
-          "category": "uomo",
-          "name": "Warriors Maglia Gara Uomo",
-          "price": 95
-        },
-        {
+          "img": "./assests/img/gsw/donna/felpa donna 1 gsw.avif",
           "type": "felpa",
           "category": "donna",
           "name": "Warriors Felpa Donna",
           "price": 65
         },
         {
-          "type": "tshirt",
+          "img": "./assests/img/gsw/donna/felpa donna 2 gsw.avif",
+          "type": "felpa",
           "category": "donna",
-          "name": "Warriors T-Shirt Donna",
-          "price": 30
+          "name": "Warriors Felpa Donna",
+          "price": 65
         },
         {
+          "img": "./assests/img/gsw/donna/maglia 1 donna  gsw.avif",
           "type": "maglia",
           "category": "donna",
           "name": "Warriors Maglia Gara Donna",
           "price": 90
         },
         {
-          "type": "felpa",
+            "img": "./assests/img/gsw/bambino/bambino 1 gsw.avif",
+          "type": "maglia ",
           "category": "bimbo",
-          "name": "Warriors Felpa Bambino",
+          "name": "Warriors Maglia Bambino",
           "price": 50
         },
-        {
-          "type": "tshirt",
+         {
+            "img": "./assests/img/gsw/bambino/bambino 3 gsw.avif",
+          "type": "maglia ",
           "category": "bimbo",
-          "name": "Warriors T-Shirt Bambino",
-          "price": 25
+          "name": "Warriors Maglia Bambino",
+          "price": 50
         },
-        {
-          "type": "maglia",
-          "category": "bimbo",
-          "name": "Warriors Maglia Gara Bambino",
-          "price": 70
-        }
       ]
     },
     {
@@ -270,58 +316,67 @@
       "headerpic": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_4519,h_2541/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/18/01j4jk89wydjd489mh5d.jpg",
       "products": [
         {
-          "type": "felpa",
+          "img": "./assests/img/boston/uomo/maglia 1 boston uomo.avif",
+          "type": "maglia gara",
           "category": "uomo",
-          "name": "Celtics Felpa Uomo",
+          "name": "Celtics Maglia Gara Uomo",
           "price": 70
         },
         {
-          "type": "tshirt",
-          "category": "uomo",
-          "name": "Celtics T-Shirt Uomo",
-          "price": 35
-        },
-        {
-          "type": "maglia",
+          "img": "./assests/img/boston/uomo/maglia 2 boston uomo.avif",
+          "type": "maglia gara",
           "category": "uomo",
           "name": "Celtics Maglia Gara Uomo",
+          "price": 70
+        },
+        {
+          "img": "./assests/img/boston/uomo/giubbotto 1 uomo boston.avif",
+          "type": "giubbotto",
+          "category": "uomo",
+          "name": "Celtics Giubbotto Uomo",
           "price": 95
         },
         {
+          "img": "./assests/img/boston/donna/felpa 2 donna boston.avif",
           "type": "felpa",
           "category": "donna",
           "name": "Celtics Felpa Donna",
           "price": 65
         },
         {
+          "img": "./assests/img/boston/donna/donna maglia  1 boston.avif",
           "type": "tshirt",
           "category": "donna",
           "name": "Celtics T-Shirt Donna",
           "price": 30
         },
         {
-          "type": "maglia",
+          "img": "./assests/img/boston/donna/donna felpa 1 boston.avif",
+          "type": "felpa",
           "category": "donna",
-          "name": "Celtics Maglia Gara Donna",
-          "price": 90
+          "name": "Celtics Felpa Donna",
+          "price": 65
         },
         {
+            "img": "./assests/img/boston/bambino/maglia 1 bambino boston.avif",
+          "type": "maglia ",
+          "category": "bimbo",
+          "name": "Celtics Maglia Bambino",
+          "price": 50
+        },
+        {
+          "img":"./assests/img/boston/bambino/maglia 2 bambino boston.avif",
+          "type": "maglia ",
+          "category": "bimbo",
+          "name": "Celtics Maglia Bambino",
+          "price": 50
+        },
+        {
+          "img": "./assests/img/boston/bambino/felpa bambino 1  boston.avif",
           "type": "felpa",
           "category": "bimbo",
           "name": "Celtics Felpa Bambino",
           "price": 50
-        },
-        {
-          "type": "tshirt",
-          "category": "bimbo",
-          "name": "Celtics T-Shirt Bambino",
-          "price": 25
-        },
-        {
-          "type": "maglia",
-          "category": "bimbo",
-          "name": "Celtics Maglia Gara Bambino",
-          "price": 70
         }
       ]
     },
@@ -333,55 +388,64 @@
       "headerpic": "https://images2.alphacoders.com/135/thumb-1920-1359150.png",
       "products": [
         {
-          "type": "felpa",
+          "img": "./assests/img/dallas/uomo/uomo 1 dallas maglia.avif",
+          "type": "maglia gara",
           "category": "uomo",
-          "name": "Mavericks Felpa Uomo",
+          "name": "Mavericks Maglia Gara Uomo",
           "price": 70
         },
         {
-          "type": "tshirt",
-          "category": "uomo",
-          "name": "Mavericks T-Shirt Uomo",
-          "price": 35
-        },
-        {
-          "type": "maglia",
+          "img": "./assests/img/dallas/uomo/uomo 2 maglia dallas.avif",
+          "type": "maglia gara",
           "category": "uomo",
           "name": "Mavericks Maglia Gara Uomo",
-          "price": 95
+          "price": 70
         },
         {
+          "img": "./assests/img/dallas/uomo/uomo 3 maglia dallas.avif",
+          "type": "maglia gara",
+          "category": "uomo",
+          "name": "Mavericks Maglia Gara Uomo",
+          "price": 70
+        },
+        {
+          "img": "./assests/img/dallas/donna/felpa 1 donna dallas.avif",
           "type": "felpa",
           "category": "donna",
           "name": "Mavericks Felpa Donna",
           "price": 65
         },
         {
+          "img": "./assests/img/dallas/donna/maglia 1 donna dallas.avif",
           "type": "tshirt",
           "category": "donna",
           "name": "Mavericks T-Shirt Donna",
           "price": 30
         },
         {
-          "type": "maglia",
-          "category": "donna",
-          "name": "Mavericks Maglia Gara Donna",
-          "price": 90
-        },
-        {
-          "type": "felpa",
-          "category": "bimbo",
-          "name": "Mavericks Felpa Bambino",
-          "price": 50
-        },
-        {
+          "img": "./assests/img/dallas/donna/maglia 2 donna dallas.avif",
           "type": "tshirt",
-          "category": "bimbo",
-          "name": "Mavericks T-Shirt Bambino",
-          "price": 25
+          "category": "donna",
+          "name": "Mavericks T-Shirt Donna",
+          "price": 30
         },
         {
-          "type": "maglia",
+          "img": "./assests/img/dallas/bambino/bimbo 1 maglia dallas.avif",
+          "type": "maglia gara",
+          "category": "bimbo",
+          "name": "Mavericks Maglia Gara Bambino",
+          "price": 70
+        },
+       {
+          "img": "./assests/img/dallas/bambino/bimbo 2 maglia dallas.avif",
+          "type": "maglia gara",
+          "category": "bimbo",
+          "name": "Mavericks Maglia Gara Bambino",
+          "price": 70
+        },
+        {
+          "img": "./assests/img/dallas/bambino/bimbo 3 maglia dallas.avif",
+          "type": "maglia gara",
           "category": "bimbo",
           "name": "Mavericks Maglia Gara Bambino",
           "price": 70
@@ -396,58 +460,74 @@
       "headerpic": "https://static0.givemesportimages.com/wordpress/wp-content/uploads/2024/05/knicks-mixcollage-15-may-2024-02-53-pm-4034.jpg?w=1600&h=900&fit=crop",
       "products": [
         {
-          "type": "felpa",
+          "img": "./assests/img/NewYork/uomo/uomo maglia 1 NY.avif",
+          "type": "maglia gara",
           "category": "uomo",
-          "name": "Knicks Felpa Uomo",
-          "price": 70
+          "name": "Knicks Maglia Gara Uomo",
+          "price": 90
         },
-        {
+         {
+          "img": "./assests/img/NewYork/uomo/uomo maglia 2 NY.avif",
+          "type": "maglia gara",
+          "category": "uomo",
+          "name": "Knicks Maglia Gara Uomo",
+          "price": 90
+        },
+         {
+          "img": "./assests/img/NewYork/uomo/uomo maglia 3 Ny.avif",
           "type": "tshirt",
           "category": "uomo",
           "name": "Knicks T-Shirt Uomo",
-          "price": 35
+          "price": 70
         },
         {
-          "type": "maglia",
-          "category": "uomo",
-          "name": "Knicks Maglia Gara Uomo",
-          "price": 95
-        },
-        {
+          "img": "./assests/img/NewYork/donna/felpa donna 1 nY.avif",
           "type": "felpa",
           "category": "donna",
           "name": "Knicks Felpa Donna",
           "price": 65
         },
         {
+          "img": "./assests/img/NewYork/donna/felpa donna 2 Ny.avif",
+          "type": "felpa",
+          "category": "donna",
+          "name": "Knicks Felpa Donna",
+          "price": 65
+        },
+         {
+          "img": "./assests/img/NewYork/donna/felpa donna 3 ny.avif",
+          "type": "felpa",
+          "category": "donna",
+          "name": "Knicks Felpa Donna",
+          "price": 65
+        },
+        {
+          "img": "./assests/img/NewYork/donna/maglia donna 1 nY.avif",
           "type": "tshirt",
           "category": "donna",
           "name": "Knicks T-Shirt Donna",
-          "price": 30
+          "price": 40
         },
         {
-          "type": "maglia",
-          "category": "donna",
-          "name": "Knicks Maglia Gara Donna",
-          "price": 90
+          "img": "./assests/img/NewYork/bimbo/maglia 1 bambino Ny.avif",
+          "type": "maglia gara",
+          "category": "bimbo",
+          "name": "Knicks Maglia Gara Bambino",
+          "price": 60
         },
         {
+          "img": "./assests/img/NewYork/bimbo/maglia 2 bambino ny.avif",
+          "type": "maglia gara",
+          "category": "bimbo",
+          "name": "Knicks Maglia Gara Bambino",
+          "price": 60
+        },
+        {
+          "img": "./assests/img/NewYork/bimbo/felpa 1 bimbo ny.avif",
           "type": "felpa",
           "category": "bimbo",
           "name": "Knicks Felpa Bambino",
           "price": 50
-        },
-        {
-          "type": "tshirt",
-          "category": "bimbo",
-          "name": "Knicks T-Shirt Bambino",
-          "price": 25
-        },
-        {
-          "type": "maglia",
-          "category": "bimbo",
-          "name": "Knicks Maglia Gara Bambino",
-          "price": 70
         }
       ]
     },
@@ -459,55 +539,64 @@
       "headerpic": "https://sport.sky.it/assets/images/8701804c97998f4f3fea5909246766f28ce685b8/skysport/it/nba/2025/10/31/nba-okc-thunder-eastern-conference-record/shai_okc_getty.jpg",
       "products": [
         {
-          "type": "felpa",
-          "category": "uomo",
-          "name": "Thunder Felpa Uomo",
-          "price": 70
-        },
-        {
-          "type": "tshirt",
-          "category": "uomo",
-          "name": "Thunder T-Shirt Uomo",
-          "price": 35
-        },
-        {
-          "type": "maglia",
+            "img": "./assests/img/okc/uomo/uomo 1 okc.avif",
+          "type": "maglia gara",
           "category": "uomo",
           "name": "Thunder Maglia Gara Uomo",
           "price": 95
         },
         {
+            "img": "./assests/img/okc/uomo/uomo 2 okc.avif",
+          "type": "maglia gara",
+          "category": "uomo",
+          "name": "Thunder Maglia Gara Uomo",
+          "price": 95
+        },
+        {
+            "img": "./assests/img/okc/uomo/uomo 3 maglia okc.jpg",
+          "type": "maglia gara",
+          "category": "uomo",
+          "name": "Thunder Maglia Gara Uomo",
+          "price": 110
+        },
+        {
+          "img": "./assests/img/okc/donna/felpa donna 1 okc.avif",
           "type": "felpa",
           "category": "donna",
           "name": "Thunder Felpa Donna",
           "price": 65
         },
         {
+          "img": "./assests/img/okc/donna/felpa donna 2 okc.avif",
+          "type": "felpa",
+          "category": "donna",
+          "name": "Thunder Felpa Donna",
+          "price": 65
+        },
+        {
+          "img": "./assests/img/okc/donna/maglia donna 1 okc.avif",
           "type": "tshirt",
           "category": "donna",
           "name": "Thunder T-Shirt Donna",
-          "price": 30
-        },
-        {
-          "type": "maglia",
-          "category": "donna",
-          "name": "Thunder Maglia Gara Donna",
-          "price": 90
-        },
-        {
-          "type": "felpa",
-          "category": "bimbo",
-          "name": "Thunder Felpa Bambino",
           "price": 50
         },
         {
-          "type": "tshirt",
+          "img" : "./assests/img/okc/bambino/bambino 1 okc.avif",
+          "type": "maglia gara",
           "category": "bimbo",
-          "name": "Thunder T-Shirt Bambino",
-          "price": 25
+          "name": "Thunder Maglia Gara Bambino",
+          "price": 70
         },
         {
-          "type": "maglia",
+          "img": "./assests/img/okc/bambino/bambino 2 okc.jpg",
+          "type": "maglia gara",
+          "category": "bimbo",
+          "name": "Thunder Maglia Gara Bambino",
+          "price": 70
+        },
+        {
+          "img" : "./assests/img/okc/bambino/bambino 23 okc.jpg",
+          "type": "maglia gara",
           "category": "bimbo",
           "name": "Thunder Maglia Gara Bambino",
           "price": 70
