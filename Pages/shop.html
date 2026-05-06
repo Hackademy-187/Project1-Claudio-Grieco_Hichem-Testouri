@@ -684,265 +684,272 @@
         <div class="row vh-100">
           <!-- ASIDE  START -->
           <aside class="col-2">
-            <div class="accordion" id="accordionExample1">
+            <!-- 1. GENDER FILTER -->
+            <div class="accordion" id="accordionGender">
               <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button
                     class="accordion-button"
                     type="button"
                     data-bs-toggle="collapse"
-                    data-bs-target="#collapseOne"
+                    data-bs-target="#collapseGender"
                     aria-expanded="true"
-                    aria-controls="collapseOne"
                   >
                     Genere
                   </button>
                 </h2>
                 <div
-                  id="collapseOne"
+                  id="collapseGender"
                   class="accordion-collapse collapse show"
-                  data-bs-parent="#accordionExample1"
+                  data-bs-parent="#accordionGender"
                 >
                   <div class="accordion-body">
                     <div class="form-check">
                       <input
                         class="form-check-input"
                         type="radio"
-                        name="radioDefault"
-                        id="radioDefault1"
+                        name="genderGroup"
+                        id="genderAll"
+                        value="all"
                         checked
                       />
-                      <label class="form-check-label" for="radioDefault1">
-                        For All
-                      </label>
+                      <label class="form-check-label" for="genderAll"
+                        >For All</label
+                      >
                     </div>
                     <div class="form-check">
                       <input
                         class="form-check-input"
                         type="radio"
-                        name="radioDefault"
-                        id="radioDefault2"
+                        name="genderGroup"
+                        id="genderUomo"
+                        value="uomo"
                       />
-                      <label class="form-check-label" for="radioDefault2">
-                        Uomo
-                      </label>
+                      <label class="form-check-label" for="genderUomo"
+                        >Uomo</label
+                      >
                     </div>
                     <div class="form-check">
                       <input
                         class="form-check-input"
                         type="radio"
-                        name="radioDefault"
-                        id="radioDefault3"
+                        name="genderGroup"
+                        id="genderDonna"
+                        value="donna"
                       />
-                      <label class="form-check-label" for="radioDefault3">
-                        Donna
-                      </label>
+                      <label class="form-check-label" for="genderDonna"
+                        >Donna</label
+                      >
                     </div>
                     <div class="form-check">
                       <input
                         class="form-check-input"
                         type="radio"
-                        name="radioDefault"
-                        id="radioDefault4"
+                        name="genderGroup"
+                        id="genderBambino"
+                        value="bambino"
                       />
-                      <label class="form-check-label" for="radioDefault4">
-                        Bambino
-                      </label>
+                      <label class="form-check-label" for="genderBambino"
+                        >Bambino</label
+                      >
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- categories -->
-            <div class="accordion" id="accordionExample">
+
+            <!-- 2. CATEGORIES FILTER -->
+            <div class="accordion mt-3" id="accordionCategory">
               <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button
                     class="accordion-button"
                     type="button"
                     data-bs-toggle="collapse"
-                    data-bs-target="#collapsetwo"
+                    data-bs-target="#collapseCat"
                     aria-expanded="true"
-                    aria-controls="collapsetwo"
                   >
-                    Tutte le categorie
+                    Categorie
                   </button>
                 </h2>
                 <div
-                  id="collapsetwo"
+                  id="collapseCat"
                   class="accordion-collapse collapse show"
-                  data-bs-parent="#accordionExample"
+                  data-bs-parent="#accordionCategory"
                 >
                   <div class="accordion-body">
                     <div class="form-check">
                       <input
                         class="form-check-input"
                         type="radio"
-                        name="radioDefault2"
-                        id="radioDefault6"
+                        name="catGroup"
+                        id="catAll"
+                        value="all"
                         checked
                       />
-                      <label class="form-check-label" for="radioDefault6">
-                        All Items
-                      </label>
+                      <label class="form-check-label" for="catAll"
+                        >All Items</label
+                      >
                     </div>
                     <div class="form-check">
                       <input
                         class="form-check-input"
                         type="radio"
-                        name="radioDefault2"
-                        id="radioDefault5"
+                        name="catGroup"
+                        id="catFelpe"
+                        value="felpe"
                       />
-                      <label class="form-check-label" for="radioDefault5">
-                        Felpe
-                      </label>
+                      <label class="form-check-label" for="catFelpe"
+                        >Felpe</label
+                      >
                     </div>
                     <div class="form-check">
                       <input
                         class="form-check-input"
                         type="radio"
-                        name="radioDefault2"
-                        id="radioDefault6"
+                        name="catGroup"
+                        id="catTshirt"
+                        value="t-shirt"
                       />
-                      <label class="form-check-label" for="radioDefault6">
-                        T-shirt
-                      </label>
+                      <label class="form-check-label" for="catTshirt"
+                        >T-shirt</label
+                      >
                     </div>
                     <div class="form-check">
                       <input
                         class="form-check-input"
                         type="radio"
-                        name="radioDefault2"
-                        id="radioDefault6"
+                        name="catGroup"
+                        id="catMaglie"
+                        value="maglie-gara"
                       />
-                      <label class="form-check-label" for="radioDefault6">
-                        Maglie Gara
-                      </label>
+                      <label class="form-check-label" for="catMaglie"
+                        >Maglie Gara</label
+                      >
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- teams -->
-            <div class="accordion" id="accordionExample3">
+
+            <!-- 3. TEAMS FILTER -->
+            <div class="accordion mt-3" id="accordionTeams">
               <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button
                     class="accordion-button"
                     type="button"
                     data-bs-toggle="collapse"
-                    data-bs-target="#collapsethree"
+                    data-bs-target="#collapseTeams"
                     aria-expanded="true"
-                    aria-controls="collapsethree"
                   >
-                    Tutte le categorie
+                    Squadre NBA
                   </button>
                 </h2>
                 <div
-                  id="collapsethree"
+                  id="collapseTeams"
                   class="accordion-collapse collapse show"
-                  data-bs-parent="#accordionExample3"
+                  data-bs-parent="#accordionTeams"
                 >
                   <div class="accordion-body">
                     <div class="form-check">
                       <input
-                        class="form-check-input"
+                        class="form-check-input team-radio"
                         type="radio"
-                        name="radioDefault3"
-                        id="radioDefault7"
-                        checked
+                        name="teamGroup"
+                        id="all"
                       />
-                      <label class="form-check-label" for="radioDefault7">
-                        All Teams
-                      </label>
+                      <label class="form-check-label" for="All"
+                        >All Teams</label
+                      >
                     </div>
                     <div class="form-check">
                       <input
-                        class="form-check-input"
+                        class="form-check-input team-radio"
                         type="radio"
-                        name="radioDefault3"
-                        id="radioDefault8"
+                        name="teamGroup"
+                        id="bulls"
                       />
-                      <label class="form-check-label" for="radioDefault8">
-                        Chicago Bulls
-                      </label>
+                      <label class="form-check-label" for="bulls"
+                        >Chicago Bulls</label
+                      >
                     </div>
                     <div class="form-check">
                       <input
-                        class="form-check-input"
+                        class="form-check-input team-radio"
                         type="radio"
-                        name="radioDefault3"
-                        id="radioDefault9"
+                        name="teamGroup"
+                        id="lakers"
                       />
-                      <label class="form-check-label" for="radioDefault9">
-                        Los-Angeles Lakers
-                      </label>
+                      <label class="form-check-label" for="lakers"
+                        >LA Lakers</label
+                      >
                     </div>
                     <div class="form-check">
                       <input
-                        class="form-check-input"
+                        class="form-check-input team-radio"
                         type="radio"
-                        name="radioDefault3"
-                        id="radioDefault10"
+                        name="teamGroup"
+                        id="heat"
                       />
-                      <label class="form-check-label" for="radioDefault10">
-                        Miami-Heat
-                      </label>
+                      <label class="form-check-label" for="heat"
+                        >Miami Heat</label
+                      >
                     </div>
                     <div class="form-check">
                       <input
-                        class="form-check-input"
+                        class="form-check-input team-radio"
                         type="radio"
-                        name="radioDefault3"
-                        id="radioDefault10"
+                        name="teamGroup"
+                        id="warriors"
                       />
-                      <label class="form-check-label" for="radioDefault10">
-                        Golden State Warriors
-                      </label>
+                      <label class="form-check-label" for="warriors"
+                        >Golden S Warriors</label
+                      >
                     </div>
                     <div class="form-check">
                       <input
-                        class="form-check-input"
+                        class="form-check-input team-radio"
                         type="radio"
-                        name="radioDefault3"
-                        id="radioDefault10"
+                        name="teamGroup"
+                        id="celtics"
                       />
-                      <label class="form-check-label" for="radioDefault10">
-                        Boston Celtics
-                      </label>
+                      <label class="form-check-label" for="celtics"
+                        >Boston Celtics</label
+                      >
                     </div>
                     <div class="form-check">
                       <input
-                        class="form-check-input"
+                        class="form-check-input team-radio"
                         type="radio"
-                        name="radioDefault3"
-                        id="radioDefault10"
+                        name="teamGroup"
+                        id="mavericks"
                       />
-                      <label class="form-check-label" for="radioDefault10">
-                        Dallas Mavericks
-                      </label>
+                      <label class="form-check-label" for="mavericks"
+                        >Dallas Mavericks</label
+                      >
                     </div>
                     <div class="form-check">
                       <input
-                        class="form-check-input"
+                        class="form-check-input team-radio"
                         type="radio"
-                        name="radioDefault3"
-                        id="radioDefault10"
+                        name="teamGroup"
+                        id="knicks"
                       />
-                      <label class="form-check-label" for="radioDefault10">
-                        New York Knicks
-                      </label>
+                      <label class="form-check-label" for="knicks"
+                        >New York Knicks</label
+                      >
                     </div>
                     <div class="form-check">
                       <input
-                        class="form-check-input"
+                        class="form-check-input team-radio"
                         type="radio"
-                        name="radioDefault3"
-                        id="radioDefault10"
+                        name="teamGroup"
+                        id="thunder"
                       />
-                      <label class="form-check-label" for="radioDefault10">
-                        Oklahoma City Thunder
-                      </label>
+                      <label class="form-check-label" for="thunder"
+                        >OKC Thunder</label
+                      >
                     </div>
                   </div>
                 </div>
@@ -953,7 +960,6 @@
           <!-- ARTICLES START -->
           <article class="col-10">
             <div class="card" style="width: 18rem">
-              <img src="..." class="card-img-top" alt="..." />
               <div class="card-body">
                 <p class="card-text">
                   Some quick example text to build on the card title and make up

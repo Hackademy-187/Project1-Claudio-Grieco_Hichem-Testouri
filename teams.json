@@ -22,7 +22,7 @@
           "price": 35
         },
         {
-          "img": "./assests/imgs/chicago Bulls/uomo/uomo 2 chicago.jpg",
+          "img": "./assests/imgs/chicago Bulls/uomo/uomo 2 chicago.png",
           "type": "maglia",
           "category": "uomo",
           "name": "Bulls Maglia Gara Uomo",
@@ -36,6 +36,7 @@
           "price": 95
         },
         {
+          "img": "./assests/imgs/chicago Bulls/donna/donna 1 chicago.jpg",
           "type": "felpa",
           "category": "donna",
           "name": "Bulls Felpa Donna",

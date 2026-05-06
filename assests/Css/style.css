@@ -26,6 +26,11 @@ h6 {
   max-width: 87%;
   margin: 0 auto;
 }
+.form-check-input:checked {
+  background-color: var(--selection2-color);
+  color: var(--selection-color);
+  border-color: var(--selection-color);
+}
 /* ------------------------NAVBAR--------------------------- */
 
 /* white navbar  */
@@ -200,6 +205,9 @@ h6 {
   transform: translate(0px, -1px);
   text-decoration: underline;
   text-underline-offset: 3px;
+}
+#secNav {
+  background-color: var(--first-color);
 }
 /* navbar header end */
 
