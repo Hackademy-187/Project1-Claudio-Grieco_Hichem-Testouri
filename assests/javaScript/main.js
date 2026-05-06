@@ -11,13 +11,15 @@ fetch("../../teams.json")
     let navbarShop = document.querySelector("#main-nav");
     let secNav = document.querySelector("#secNav");
     let imgNav = document.querySelector("#logoNav");
+    let headerPic = document.querySelector("#headerPic");
 
     if (selectedTeam) {
       navbarShop.style.backgroundColor = colorPrimary;
       secNav.style.backgroundColor = colorSecondary;
       let teamLogo = selectedTeam.logo;
       imgNav.src = teamLogo;
-      img.alt = `${selectedTeam.name} logo`;
+      imgNav.alt = `${selectedTeam.name} logo`;
+      headerPic.src = selectedTeam.headerpic;
     } else {
       navbarShop.style.backgroundColor = "#000";
       secNav.style.backgroundColor = "#0000ff";
