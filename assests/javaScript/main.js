@@ -52,4 +52,31 @@ btnDarkMode.addEventListener("click", () => {
     btnDarkMode.innerHTML = `<i class="fa-sharp fa-solid fa-moon" style="color: rgb(255, 255, 255);"></i>`;   
   }
 });
-// 
+// section numbers home page
+function createInterval(element, maxNumber, timeFrequency) {
+    let counter = 0;
+    let interval = setInterval(() => {
+        if (counter < maxNumber) {
+            counter++;
+            element.innerHTML = counter;
+        } else {
+            clearInterval(interval);
+        }
+    }, timeFrequency);    
+}
+
+let isChecked = false;
+
+// Intersection Observer
+let observerNumber = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting && !isChecked) {
+            createInterval(firstNumber, 500, 10000);
+            createInterval(secondNumber, 10000, 25);
+            createInterval(thirdNumber, 10000, 1);
+            isChecked = true;
+        }
+    })
+    
+})
+observerNumber.observe(thirdNumber);
