@@ -345,3 +345,10 @@ hr {
   cursor: pointer;
   padding-right: 10px;
 }
+/* custom counter */
+.CustomCounter {
+  font-size: 50px;
+  font-weight: bold;
+  color: var(--first-color);
+  margin-bottom: 20px;
+}
