@@ -12,6 +12,9 @@ fetch("../../teams.json")
     let secNav = document.querySelector("#secNav");
     let imgNav = document.querySelector("#logoNav");
     let headerPic = document.querySelector("#headerPic");
+    let filterBtns = document.querySelectorAll(
+      ".accordion-button:not(.collapsed)",
+    );
 
     if (selectedTeam) {
       navbarShop.style.backgroundColor = colorPrimary;
@@ -20,6 +23,18 @@ fetch("../../teams.json")
       imgNav.src = teamLogo;
       imgNav.alt = `${selectedTeam.name} logo`;
       headerPic.src = selectedTeam.headerpic;
+      document.documentElement.style.setProperty(
+        "--selection-color",
+        colorPrimary,
+      );
+      document.documentElement.style.setProperty(
+        "--selection2-color",
+        colorSecondary,
+      );
+      filterBtns.forEach((btn) => {
+        btn.style.backgroundColor = colorPrimary;
+        btn.style.color = colorSecondary;
+      });
     } else {
       navbarShop.style.backgroundColor = "#000";
       secNav.style.backgroundColor = "#0000ff";
@@ -49,34 +64,33 @@ btnDarkMode.addEventListener("click", () => {
     document.querySelector(".costumButton").style.backgroundColor = "#000";
     document.querySelector(".costumButton").style.color = "#fff";
     isClicked = true;
-    btnDarkMode.innerHTML = `<i class="fa-sharp fa-solid fa-moon" style="color: rgb(255, 255, 255);"></i>`;   
+    btnDarkMode.innerHTML = `<i class="fa-sharp fa-solid fa-moon" style="color: rgb(255, 255, 255);"></i>`;
   }
 });
 // section numbers home page
 function createInterval(element, maxNumber, timeFrequency) {
-    let counter = 0;
-    let interval = setInterval(() => {
-        if (counter < maxNumber) {
-            counter++;
-            element.innerHTML = counter;
-        } else {
-            clearInterval(interval);
-        }
-    }, timeFrequency);    
+  let counter = 0;
+  let interval = setInterval(() => {
+    if (counter < maxNumber) {
+      counter++;
+      element.innerHTML = counter;
+    } else {
+      clearInterval(interval);
+    }
+  }, timeFrequency);
 }
 
 let isChecked = false;
 
 // Intersection Observer
 let observerNumber = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting && !isChecked) {
-            createInterval(firstNumber, 500, 10000);
-            createInterval(secondNumber, 10000, 25);
-            createInterval(thirdNumber, 10000, 1);
-            isChecked = true;
-        }
-    })
-    
-})
+  entries.forEach((entry) => {
+    if (entry.isIntersecting && !isChecked) {
+      createInterval(firstNumber, 500, 10000);
+      createInterval(secondNumber, 10000, 25);
+      createInterval(thirdNumber, 10000, 1);
+      isChecked = true;
+    }
+  });
+});
 observerNumber.observe(thirdNumber);
