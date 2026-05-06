@@ -8,21 +8,31 @@
       "headerpic": "https://bellmediainc-bnn-bloomberg-prod.web.arc-cdn.net/resizer/v2/https%3A%2F%2Farc-goldfish-bellmediainc-thumbnails.s3.amazonaws.com%2F11-20-2025%2Ft_1a6295e66cb04bd1998d321eeaaff2fe_name_2025_11_20_626d70d8_43ca_4b25_9bf7_1b16f710c848_jpg_1920x1080.jpg?auth=7a3dab9e6fb342a686ebf03157875bbbd3fd5c372bdfbe6e108a80c3f53acf4b&width=1536&height=864&smart=true&quality=80",
       "products": [
         {
+          "img": "./assests/imgs/chicago Bulls/uomo/uomo 4 chicago.jpg",
           "type": "felpa",
           "category": "uomo",
           "name": "Bulls Felpa Uomo",
           "price": 70
         },
         {
+          "img": "./assests/imgs/chicago Bulls/uomo/uomo 1 chicago.jpg",
           "type": "tshirt",
           "category": "uomo",
-          "name": "Bulls T-Shirt Uomo",
+          "name": "Bulls Maglia Gara Uomo",
           "price": 35
         },
         {
+          "img": "./assests/imgs/chicago Bulls/uomo/uomo 2 chicago.jpg",
           "type": "maglia",
           "category": "uomo",
           "name": "Bulls Maglia Gara Uomo",
+          "price": 95
+        },
+        {
+          "img": "./assests/imgs/chicago Bulls/uomo/uomo 3 chicago.jpg",
+          "type": "maglia",
+          "category": "uomo",
+          "name": "Bulls Maglia  Uomo",
           "price": 95
         },
         {
