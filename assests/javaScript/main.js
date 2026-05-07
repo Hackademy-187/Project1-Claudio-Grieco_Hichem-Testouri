@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     .then((data) => {
       // 📌 Get team from URL (example: shop.html?team=bulls)
       const params = new URLSearchParams(window.location.search);
-      const teamId = params.get("team");
+      const teamId = params.get("team") || "all";
 
       // 🔍 Find selected team (can be undefined if "all")
       const selectedTeam =
@@ -71,11 +71,17 @@ document.addEventListener("DOMContentLoaded", () => {
           btn.style.color = colorSecondary;
         });
       }
+      console.log(selectedTeam.products);
+
       // ==============================
       // ✅ CREATE ARTICLES CARDS
       // ==============================
       function createArticles(array) {
         array.forEach((product) => {
+          if (!array) {
+            console.log("array is undefined ❌");
+            return;
+          }
           let div = document.createElement("div");
           div.classList.add("cardCustom");
           div.innerHTML = `              <img
@@ -95,6 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
           articleCards.appendChild(div);
         });
       }
+
       createArticles(selectedTeam.products);
       // ==============================
       // 🔘 RADIO BUTTON NAVIGATION
@@ -111,6 +118,22 @@ document.addEventListener("DOMContentLoaded", () => {
           }
         });
       });
+      let productsToShow = [];
+
+      if (teamId === "all") {
+        // 🔥 get ALL products from all teams
+        data.teams.forEach((team) => {
+          if (team.products) {
+            productsToShow.push(...team.products);
+          }
+        });
+      } else {
+        // normal team
+        const selectedTeam = data.teams.find((t) => t.id === teamId);
+        productsToShow = selectedTeam.products;
+      }
+
+      createArticles(productsToShow);
 
       // ==============================
       // ✅ KEEP RADIO SELECTED AFTER RELOAD
