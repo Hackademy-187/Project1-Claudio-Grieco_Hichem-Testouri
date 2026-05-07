@@ -17,4 +17,11 @@
   .headerPic {
     display: none;
   }
+  .separatorPic {
+    width: 100%;
+    height: 400px;
+    object-position: center;
+    object-fit: cover; /* This is the magic line! */
+    animation: separateEntrance 2s ease forwards;
+  }
 }
