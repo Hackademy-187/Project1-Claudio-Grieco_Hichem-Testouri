@@ -276,7 +276,7 @@ h6 {
     opacity: 1;
   }
   100% {
-    left: 100%;
+    left: 90%;
     opacity: 0;
   } /* Travels across the whole screen */
 }
