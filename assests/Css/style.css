@@ -167,7 +167,19 @@ h6 {
 /* ------------------------NAVBAR END--------------------------- */
 /* ------------------------HEADER START------------------------------- */
 /* HEADER */
-
+.promoShop {
+  background-color: var(--selection-color);
+  padding: 3px;
+  text-align: center;
+  color: var(--selection2-color);
+  font-weight: 400;
+}
+.promoShop h3 {
+  margin: 0;
+  font-size: 16px;
+  padding: 10px;
+  letter-spacing: 1px;
+}
 /* LIST NAV header */
 .customHeader ul {
   background-color: var(--first-color);
@@ -393,6 +405,9 @@ hr {
   justify-content: center;
   align-items: center;
   padding: 10px;
+}
+.card-body h5 {
+  color: var(--selection-color);
 }
 /*-----Counter------ */
 .counterStyle {

@@ -42,36 +42,6 @@ document.addEventListener("DOMContentLoaded", () => {
       // ==============================
       // 🎨 APPLY TEAM STYLE (IF EXISTS)
       // ==============================
-      if (selectedTeam) {
-        // ✅ Only access colors if team exists (THIS FIXES YOUR BUG)
-        let colorPrimary = selectedTeam.colors.primary;
-        let colorSecondary = selectedTeam.colors.secondary;
-
-        navbarShop.style.backgroundColor = colorPrimary;
-        secNav.style.backgroundColor = colorSecondary;
-
-        // Logo + header pic
-        imgNav.src = selectedTeam.logo;
-        imgNav.alt = `${selectedTeam.name} logo`;
-        headerPic.src = selectedTeam.headerpic;
-
-        // CSS variables
-        document.documentElement.style.setProperty(
-          "--selection-color",
-          colorPrimary,
-        );
-        document.documentElement.style.setProperty(
-          "--selection2-color",
-          colorSecondary,
-        );
-
-        // Accordion buttons style
-        filterBtns.forEach((btn) => {
-          btn.style.backgroundColor = colorPrimary;
-          btn.style.color = colorSecondary;
-        });
-      }
-      console.log(selectedTeam.products);
 
       // ==============================
       // ✅ CREATE ARTICLES CARDS
@@ -89,11 +59,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 class="card-img-top"
                 alt="..."
               />
-              <div class="card-body">
-                <h5 class="card-title">${product.price} &euro;</h5>
-                <p class="card-text">
-                  ${product.name}
-                </p>
+              <div class="card-body w-100">
+              <p class="card-text ">
+              ${product.name}
+              </p>
+              <h5 class="card-title pCards">${product.price} &euro;</h5>
               </div>
               <div class="buttonCard">
                 <button class="costumButton">Add To Cart</button>
@@ -144,6 +114,36 @@ document.addEventListener("DOMContentLoaded", () => {
         const radio = document.getElementById(teamId);
         if (radio) radio.checked = true;
       }
+      if (selectedTeam) {
+        // ✅ Only access colors if team exists (THIS FIXES YOUR BUG)
+        let colorPrimary = selectedTeam.colors.primary;
+        let colorSecondary = selectedTeam.colors.secondary;
+
+        navbarShop.style.backgroundColor = colorPrimary;
+        secNav.style.backgroundColor = colorSecondary;
+
+        // Logo + header pic
+        imgNav.src = selectedTeam.logo;
+        imgNav.alt = `${selectedTeam.name} logo`;
+        headerPic.src = selectedTeam.headerpic;
+
+        // CSS variables
+        document.documentElement.style.setProperty(
+          "--selection-color",
+          colorPrimary,
+        );
+        document.documentElement.style.setProperty(
+          "--selection2-color",
+          colorSecondary,
+        );
+
+        // Accordion buttons style
+        filterBtns.forEach((btn) => {
+          btn.style.backgroundColor = colorPrimary;
+          btn.style.color = colorSecondary;
+        });
+      }
+      console.log(selectedTeam.products);
     });
 
   // ==============================
@@ -210,3 +210,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
   observerNumber.observe(thirdNumber);
 });
+// ==============================
+// 🔢 COUNTDOWN ANIMATION
+// ==============================
+function formatTime(value) {
+  return value < 10 ? "0" + value : value;
+}
+let countDown = new Date("may 31, 2026 23:59:59").getTime();
+let x = setInterval(function () {
+  let now = new Date().getTime();
+  let distance = countDown - now;
+  let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  document.getElementById("countdown").innerHTML =
+    `Buy 3 and get 1 free ! PROMO VALID TILL :  
+  ${formatTime(days)} : ${formatTime(hours)} : ${formatTime(minutes)} : ${formatTime(seconds)}`;
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("countdown").innerHTML = "EXPIRED";
+  }
+}, 1000);
