@@ -38,6 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
       );
       let teamRadios = document.querySelectorAll(".team-radio");
       let articleCards = document.querySelector(".articleCards");
+      let CategoryCards = document.querySelector(".cardCustom");
 
       // ==============================
       // 🎨 APPLY TEAM STYLE (IF EXISTS)
@@ -187,3 +188,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   observerNumber.observe(thirdNumber);
 });
+
+// Category filter 
+
+function filterCategory(category) {
+  
+
+}
+  
+  
+console.log(CategoryCards);
