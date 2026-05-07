@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 alt="..."
               />
               <div class="card-body">
-                <h5 class="card-title">${product.price}</h5>
+                <h5 class="card-title">${product.price} &euro;</h5>
                 <p class="card-text">
                   ${product.name}
                 </p>
