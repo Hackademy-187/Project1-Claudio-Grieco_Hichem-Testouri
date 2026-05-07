@@ -26,8 +26,6 @@ document.addEventListener("DOMContentLoaded", () => {
         filteredTeams = data.teams.filter((t) => t.id === teamId);
       }
 
-      console.log("Showing:", filteredTeams);
-
       // ==============================
       // 🎨 HTML ELEMENTS
       // ==============================
@@ -39,6 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
         ".accordion-button:not(.collapsed)",
       );
       let teamRadios = document.querySelectorAll(".team-radio");
+      let articleCards = document.querySelector(".articleCards");
 
       // ==============================
       // 🎨 APPLY TEAM STYLE (IF EXISTS)
@@ -72,7 +71,31 @@ document.addEventListener("DOMContentLoaded", () => {
           btn.style.color = colorSecondary;
         });
       }
-
+      // ==============================
+      // ✅ CREATE ARTICLES CARDS
+      // ==============================
+      function createArticles(array) {
+        array.forEach((product) => {
+          let div = document.createElement("div");
+          div.classList.add("cardCustom");
+          div.innerHTML = `              <img
+                src="${product.img}"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">${product.price}</h5>
+                <p class="card-text">
+                  ${product.name}
+                </p>
+              </div>
+              <div class="buttonCard">
+                <button class="costumButton">Add To Cart</button>
+              </div>`;
+          articleCards.appendChild(div);
+        });
+      }
+      createArticles(selectedTeam.products);
       // ==============================
       // 🔘 RADIO BUTTON NAVIGATION
       // ==============================

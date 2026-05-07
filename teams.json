@@ -18,7 +18,7 @@
       "headerpic": "https://bellmediainc-bnn-bloomberg-prod.web.arc-cdn.net/resizer/v2/https%3A%2F%2Farc-goldfish-bellmediainc-thumbnails.s3.amazonaws.com%2F11-20-2025%2Ft_1a6295e66cb04bd1998d321eeaaff2fe_name_2025_11_20_626d70d8_43ca_4b25_9bf7_1b16f710c848_jpg_1920x1080.jpg?auth=7a3dab9e6fb342a686ebf03157875bbbd3fd5c372bdfbe6e108a80c3f53acf4b&width=1536&height=864&smart=true&quality=80",
       "products": [
         {
-          "img": "./assests/imgs/chicago Bulls/uomo/uomo 4 chicago.jpg",
+          "img": "../assests/imgs/chicago Bulls/uomo/uomo4chicago.jpg",
           "type": "felpa",
           "category": "uomo",
           "name": "Bulls Felpa Uomo",
@@ -26,70 +26,70 @@
           "price": 70
         },
         {
-          "img": "./assests/imgs/chicago Bulls/uomo/uomo 1 chicago.jpg",
+          "img": "../assests/imgs/chicago Bulls/uomo/uomo 1 chicago.jpg",
           "type": "tshirt",
           "category": "uomo",
           "name": "Bulls Maglia Gara Uomo",
           "price": 35
         },
         {
-          "img": "./assests/imgs/chicago Bulls/uomo/uomo 2 chicago.png",
+          "img": "../assests/imgs/chicago Bulls/uomo/uomo 2 chicago.png",
           "type": "maglia",
           "category": "uomo",
           "name": "Bulls Maglia Gara Uomo",
           "price": 95
         },
         {
-          "img": "./assests/imgs/chicago Bulls/uomo/uomo 3 chicago.jpg",
+          "img": "../assests/imgs/chicago Bulls/uomo/uomo 3 chicago.jpg",
           "type": "maglia",
           "category": "uomo",
           "name": "Bulls Maglia  Uomo",
           "price": 95
         },
         {
-          "img": "./assests/img/chicago Bulls/donna/felpa donna 1 chicago.avif",
+          "img": "../assests/imgs/chicago Bulls/donna/felpa donna 1 chicago.avif",
           "type": "felpa",
           "category": "donna",
           "name": "Bulls Felpa Donna",
           "price": 65
         },
         {
-          "img": "./assests/img/chicago Bulls/donna/tshirt donna 2 chicago.avif",
+          "img": "../assests/imgs/chicago Bulls/donna/felpa donna 2 chicago.jpg",
           "type": "felpa",
           "category": "donna",
           "name": "Bulls Felpa Donna",
           "price": 65
         },
         {
-          "img": "./assests/img/chicago Bulls/donna/pantaloncini donna 1 chicago.avif",
+          "img": "../assests/imgs/chicago Bulls/donna/pantaloncini donna 1 chicago.avif",
           "type": "maglia gara",
           "category": "donna",
           "name": "Bulls Pantaloncini Gara Donna",
           "price": 50
         },
         {
-          "img": "./assests/img/chicago Bulls/donna/t-shirt gara.jpg",
+          "img": "../assests/imgs/chicago Bulls/donna/t-shirt gara.jpg",
           "type": "maglia gara",
           "category": "donna",
           "name": "Bulls Maglia Gara Donna",
           "price": 80
         },
         {
-          "img": "./assests/img/chicago Bulls/bimbo/felpa bimbo 1 chicago.avif",
+          "img": "../assests/imgs/chicago Bulls/bimbo/completo bimbo 1 chicago.avif",
           "type": "felpa",
           "category": "bimbo",
           "name": "Bulls Completo Gara Bambino",
           "price": 50
         },
         {
-          "img": "./assests/img/chicago Bulls/bimbo/tshirt bimbo 1 chicago.avif",
+          "img": "https://images.footballfanatics.com/chicago-bulls/chicago-bulls-nba-essential-logo-t-shirt-youth_ss5_p-203543421+u-faz2eavlgc6f37ie0yyx+v-tgrtil6mk2gbxlhyxwks.jpg?_hv=2&w=400",
           "type": "tshirt",
           "category": "bimbo",
           "name": "Bulls T-Shirt Bambino",
           "price": 25
         },
         {
-          "img": "./assests/img/chicago Bulls/bimbo/pantaloncino bimbo 1 chicago.avif",
+          "img": "../assests/imgs/chicago Bulls/bimbo/pantaloncino bimbo 1 chicago.avif",
           "type": "maglia",
           "category": "bimbo",
           "name": "Bulls Pantaloncino Gara Bambino",
@@ -105,69 +105,70 @@
       "headerpic": "https://cdn.nba.com/teams/legacy/www.nba.com/lakers/sites/lakers/files/gettyimages-1204233988.jpg",
       "products": [
         {
-          "img": "./assests/img/los angeles lakers/uomo/uomo maglia lak 1.avif",
+          "img": "../assests/imgs/Lakers/uomo/uomo maglia lak 1.avif",
           "type": "maglia",
           "category": "uomo",
           "name": "Lakers Maglia Gara Uomo",
           "price": 95
         },
         {
-          "img": "./assests/img/los angeles lakers/uomo/uomo maglia lak 2.avif",
+          "img": "../assests/imgs/lakers/uomo/uomo maglia lak 2.avif",
           "type": "maglia gara",
           "category": "uomo",
           "name": "Lakers Maglia Gara Uomo",
           "price": 95
         },
         {
-          "img": "./assests/img/los angeles lakers/uomo/uomo maglia lak 3.avif",
+          "img": "https://images.footballfanatics.com/los-angeles-lakers/nike-los-angeles-lakers-2025/26-city-edition-swingman-jersey-custom-unisex_ss5_p-203087926+u-5g0uletwyh7opxymrna1+v-evc9ar3zdewzy3wi1kr7.jpg?_hv=2&w=400",
           "type": "maglia",
           "category": "uomo",
           "name": "Lakers Maglia Gara Uomo",
-          "price": 95
+          "price": 113
         },
         {
-          "img": "./assests/img/los angeles lakers/donna/felpa 1 donna lak.avif",
+          "img": "../assests/imgs/Lakers/donna/felpa 1 donna lak.avif",
           "type": "felpa",
           "category": "donna",
           "name": "Lakers Felpa Donna",
           "price": 65
         },
         {
-          "img": "./assests/img/los angeles lakers/donna/felpa donna 2 lak.avif",
+          "img": "../assests/imgs/Lakers/donna/felpa donna 2 lak.avif",
           "type": "felpa",
           "category": "donna",
           "name": "Lakers Felpa Donna",
           "price": 65
         },
         {
-          "img": "./assests/img/los angeles lakers/donna/felpa donna 3 lak.avif",
+          "img": "../assests/imgs/Lakers/donna/felpa donna 3 lak.avif",
           "type": "felpa",
           "category": "donna",
           "name": "Lakers Felpa Donna",
           "price": 65
         },
         {
-          "img": "./assests/img/los angeles lakers/bambino bimbo lak 1.avif",
+          "img": "../assests/imgs/Lakers/bambino/bimbo maglia lak 1.avif",
           "type": "maglia",
           "category": "bimbo",
           "name": "Lakers Maglia Gara Bambino",
           "price": 60
         },
         {
-          "img": "./assests/img/los angeles lakers/bambino bimbo lak 2.avif",
+          "img": "../assests/imgs/Lakers/bambino/bimbo maglia lak 2.avif",
           "type": "maglia",
           "category": "bimbo",
           "name": "Lakers Maglia Gara Bambino",
           "price": 60
         },
         {
-          "img": "./assests/img/los angeles lakers/bambino felpa bimbo 3 lak.avif",
+          "img": "../assests/imgs/Lakers/bambino/felpa bimbo 3 lak.avif",
           "type": "felpa",
           "category": "bimbo",
           "name": "Lakers Felpa Bambino",
           "price": 50
         },
         {
+          "img": "https://images.footballfanatics.com/los-angeles-lakers/los-angeles-lakers-association-swingman-jersey-kobe-bryant-8-youth_ss5_p-203794242+u-klxpaved3dq5k2qbupis+v-f6cg9drmx7zcuau2eeqw.jpg?_hv=2&w=400",
           "type": "maglia",
           "category": "bimbo",
           "name": "Lakers Maglia Gara Bambino",
@@ -183,70 +184,70 @@
       "headerpic": "https://library.sportingnews.com/styles/twitter_card_120x120/s3/2025-11/Heat%20Jaime%20Jaquez%20Tyler%20Herro%20Bam%20Adebayo_0.jpg?itok=JSLYBeHe",
       "products": [
         {
-          "img": "./assests/img/miami heat/uomo magla 1 uomo miami.avif",
+          "img": "../assests/imgs/miami/uomo/maglia 2 uomo miami.avif",
           "type": "maglia gara",
           "category": "uomo",
           "name": "Heat Maglia Gara Uomo",
           "price": 95
         },
         {
-          "img": "./assests/img/miami heat/uomo maglia 2 uomo miami.avif",
+          "img": "../assests/imgs/miami/uomo/maglia 1 uomo maimi.avif",
           "type": "maglia gara",
           "category": "uomo",
           "name": "Heat Maglia Gara Uomo",
           "price": 95
         },
         {
-          "img": "./assests/img/miami heat/uomo giubbotto 1 uomo miami.avif",
+          "img": "../assests/imgs/miami/uomo/giubbotto 1 uomo miami.avif",
           "type": "giubbotto",
           "category": "uomo",
           "name": "Heat Giubbotto Uomo",
           "price": 120
         },
         {
-          "img": "./assests/img/miami heat/donna maglia 1 donna miami.avif",
+          "img": "../assests/imgs/miami/donna/maglia 1 donna miami.avif",
           "type": "maglia",
           "category": "donna",
           "name": "Heat Maglia Donna",
           "price": 60
         },
         {
-          "img": "./assests/img/miami heat/donna maglia 2 donna miami.avif",
+          "img": "../assests/imgs/miami/donna/maglia 2 donna miami.avif",
           "type": "maglia",
           "category": "donna",
           "name": "Heat Maglia Donna",
           "price": 60
         },
         {
-          "img": "./assests/img/miami heat/donna maglia 3 donna miami.avif",
+          "img": "../assests/imgs/miami/donna/maglia 3 donna miami.avif",
           "type": "maglia gara",
           "category": "donna",
           "name": "Heat Maglia Gara Donna",
           "price": 90
         },
         {
-          "img": "./assests/img/miami heat/donna maglia 4 donna miami.avif",
+          "img": "../assests/imgs/miami/donna/maglia 4 donna miami.avif",
           "type": "maglia ",
           "category": "donna",
           "name": "Heat Maglia Donna",
           "price": 60
         },
         {
-          "img": "./assests/img/miami heat/bambino maglia 1 bambino miami.avif",
+          "img": "../assests/imgs/miami/bambino/maglia 1 bambino miami.avif",
           "type": "maglia",
           "category": "bimbo",
           "name": "Heat Maglia Bambino",
           "price": 50
         },
         {
-          "img": "./assests/img/miami heat/bambino maglia 1 bambino miami.avif",
+          "img": "../assests/imgs/miami/bambino/maglia 1 bambino miami.avif",
           "type": "maglia ",
           "category": "bimbo",
           "name": "Heat Maglia Bambino",
           "price": 50
         },
         {
-          "img": "./assests/img/miami heat/bambino pantaloncino 1 bambino miami.avif",
+          "img": "../assests/imgs/miami/bambino/pantaloncino 1 bambino miami.avif",
           "type": "maglia gara",
           "category": "bimbo",
           "name": "Heat Pantaloncino Bambino",
