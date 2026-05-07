@@ -9,8 +9,13 @@ document.addEventListener("DOMContentLoaded", () => {
       const teamId = params.get("team");
 
       // 🔍 Find selected team (can be undefined if "all")
-      const selectedTeam = data.teams.find((t) => t.id === teamId) || null;
+      const selectedTeam =
+        data.teams.find((t) => t.id === teamId) ||
+        data.teams.find((t) => t.id === "all");
 
+      // ==============================
+      // 🎯 FILTER TEAMS
+      // ==============================
       // 🎯 Decide what to show
       let filteredTeams;
       if (!teamId) {
@@ -46,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
         navbarShop.style.backgroundColor = colorPrimary;
         secNav.style.backgroundColor = colorSecondary;
 
-        // Logo + header
+        // Logo + header pic
         imgNav.src = selectedTeam.logo;
         imgNav.alt = `${selectedTeam.name} logo`;
         headerPic.src = selectedTeam.headerpic;
@@ -66,10 +71,6 @@ document.addEventListener("DOMContentLoaded", () => {
           btn.style.backgroundColor = colorPrimary;
           btn.style.color = colorSecondary;
         });
-      } else {
-        // 👉 DEFAULT STYLE when "ALL"
-        navbarShop.style.backgroundColor = "#000";
-        secNav.style.backgroundColor = "#0000ff";
       }
 
       // ==============================
@@ -84,8 +85,6 @@ document.addEventListener("DOMContentLoaded", () => {
             window.location.href = `shop.html?team=${selectedId}`;
           } else {
             window.location.href = `shop.html`; // ALL = no param
-            btn.style.backgroundColor = "red";
-            btn.style.color = "black";
           }
         });
       });
@@ -156,8 +155,8 @@ document.addEventListener("DOMContentLoaded", () => {
     entries.forEach((entry) => {
       if (entry.isIntersecting && !isChecked) {
         createInterval(firstNumber, 500, 10);
-        createInterval(secondNumber, 10000, 25);
-        createInterval(thirdNumber, 10000, 1);
+        createInterval(secondNumber, 999, 25);
+        createInterval(thirdNumber, 999, 0);
         isChecked = true;
       }
     });

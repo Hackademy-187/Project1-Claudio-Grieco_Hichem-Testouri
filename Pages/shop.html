@@ -681,9 +681,9 @@
       <!-- img to separate header and section -->
       <!-- SECTION START -->
       <section class="container-fluid">
-        <div class="row vh-100">
+        <div class="row flex-column flex-xl-row">
           <!-- ASIDE  START -->
-          <aside class="col-2">
+          <aside class="col-12 col-xl-3">
             <!-- 1. GENDER FILTER -->
             <div class="accordion" id="accordionGender">
               <div class="accordion-item">
@@ -706,7 +706,7 @@
                   <div class="accordion-body">
                     <div class="form-check">
                       <input
-                        class="form-check-input"
+                        class="form-check-input allBtn"
                         type="radio"
                         name="genderGroup"
                         id="genderAll"
@@ -780,7 +780,7 @@
                   <div class="accordion-body">
                     <div class="form-check">
                       <input
-                        class="form-check-input"
+                        class="form-check-input allBtn"
                         type="radio"
                         name="catGroup"
                         id="catAll"
@@ -854,7 +854,7 @@
                   <div class="accordion-body">
                     <div class="form-check">
                       <input
-                        class="form-check-input team-radio"
+                        class="form-check-input team-radio allBtn"
                         type="radio"
                         name="teamGroup"
                         id="all"
@@ -958,13 +958,24 @@
           </aside>
           <!-- ASIDE END -->
           <!-- ARTICLES START -->
-          <article class="col-10">
-            <div class="card" style="width: 18rem">
+          <article
+            class="col-12 col-xl-9 gap-3 d-flex flex-wrap justify-content-center articleCards"
+          >
+            <div class="cardCustom">
+              <img
+                src="../assests/imgs/chicago Bulls/uomo/uomo 1 chicago.jpg"
+                class="card-img-top"
+                alt="..."
+              />
               <div class="card-body">
+                <h5 class="card-title">105,00 €</h5>
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card’s content.
+                  Maglia Chicago Bulls Nike Icon Edition Swingman - Rossa - Yuki
+                  Kawamura - Unisex
                 </p>
+              </div>
+              <div class="buttonCard">
+                <button class="costumButton">Add To Cart</button>
               </div>
             </div>
           </article>
