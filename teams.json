@@ -3,6 +3,7 @@
     {
       "id": "all",
       "name": "All Teams",
+      "asideImg": "../assests/imgs/icons/logooffcanvasnav.svg",
       "colors": {
         "primary": "#000",
         "secondary": "#1d4289"
@@ -16,6 +17,7 @@
       "name": "Chicago Bulls",
       "colors": { "primary": "#CE1141", "secondary": "#000000" },
       "logo": "https://www.nbastore.eu/content/assets/NBA_Chicago_Bulls_3361-163881907120.23685.svg",
+      "asideImg": "https://freepngimg.com/save/36217-chicago-bulls-image/659x341",
       "headerpic": "https://bellmediainc-bnn-bloomberg-prod.web.arc-cdn.net/resizer/v2/https%3A%2F%2Farc-goldfish-bellmediainc-thumbnails.s3.amazonaws.com%2F11-20-2025%2Ft_1a6295e66cb04bd1998d321eeaaff2fe_name_2025_11_20_626d70d8_43ca_4b25_9bf7_1b16f710c848_jpg_1920x1080.jpg?auth=7a3dab9e6fb342a686ebf03157875bbbd3fd5c372bdfbe6e108a80c3f53acf4b&width=1536&height=864&smart=true&quality=80",
       "products": [
         {
@@ -104,6 +106,7 @@
       "colors": { "primary": "#330072", "secondary": "#FDB927" },
       "logo": "https://www.nbastore.eu/content/assets/NBA_Los_Angeles_Lakers_3372-1709007091616.4268.svg",
       "headerpic": "https://cdn.nba.com/teams/legacy/www.nba.com/lakers/sites/lakers/files/gettyimages-1204233988.jpg",
+      "asideImg": "https://www.freepnglogos.com/uploads/lakers-logo-png/logo-lakers-with-blue-caption-png-0.png",
       "products": [
         {
           "img": "../assests/imgs/Lakers/uomo/uomo maglia lak 1.avif",
@@ -182,6 +185,7 @@
       "name": "Miami Heat",
       "colors": { "primary": "#000000", "secondary": "#98002E" },
       "logo": "https://www.nbastore.eu/content/assets/NBA_Miami_Heat_3374-1192499944399.8809.svg",
+      "asideImg": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Miami_Heat_wordmark.gif",
       "headerpic": "https://library.sportingnews.com/styles/twitter_card_120x120/s3/2025-11/Heat%20Jaime%20Jaquez%20Tyler%20Herro%20Bam%20Adebayo_0.jpg?itok=JSLYBeHe",
       "products": [
         {
@@ -261,6 +265,7 @@
       "name": "Golden State Warriors",
       "colors": { "primary": "#1D428A", "secondary": "#FDB927" },
       "logo": "https://www.nbastore.eu/content/assets/NBA_Golden_State_Warriors_3367-30174213355.82176.svg",
+      "asideImg": "https://www.pngall.com/wp-content/uploads/13/Warriors-Logo-Transparent.png",
       "headerpic": "https://sport.sky.it/assets/images/09d9231b6f13882e2dfce36d75c2ecf1654ebec1/skysport/it/nba/2022/05/01/playoff-nba-memphis-golden-state-gara-1-risultato-highlights/thompson_warriors_cover.jpg",
       "products": [
         {
@@ -326,6 +331,7 @@
       "name": "Boston Celtics",
       "colors": { "primary": "#008348", "secondary": "#000000" },
       "logo": "https://www.nbastore.eu/content/assets/NBA_Boston_Celtics_3358-1376821775829.0422.svg",
+      "asideImg": "https://cdn.freebiesupply.com/images/large/2x/boston-celtics-logo-font.png",
       "headerpic": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_4519,h_2541/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/18/01j4jk89wydjd489mh5d.jpg",
       "products": [
         {
@@ -398,6 +404,7 @@
       "name": "Dallas Mavericks",
       "colors": { "primary": "#0053BC", "secondary": "#00285E" },
       "logo": "https://www.nbastore.eu/content/assets/NBA_Dallas_Mavericks_3363-1114327120936.4902.svg",
+      "asideImg": "https://www.freelogovectors.net/wp-content/uploads/2023/05/nba-dallas_mavericks_logo-freelogovectors.net_.png",
       "headerpic": "https://images2.alphacoders.com/135/thumb-1920-1359150.png",
       "products": [
         {
@@ -470,6 +477,7 @@
       "name": "New York Knicks",
       "colors": { "primary": "#006BB6", "secondary": "#F58426" },
       "logo": "https://www.nbastore.eu/content/assets/NBA_New_York_Knicks_3378-228415205432.52063.svg",
+      "asideImg": "https://www.freelogovectors.net/wp-content/uploads/2023/10/new_york-knicks_logo-freelogovectors.net_.png",
       "headerpic": "https://static0.givemesportimages.com/wordpress/wp-content/uploads/2024/05/knicks-mixcollage-15-may-2024-02-53-pm-4034.jpg?w=1600&h=900&fit=crop",
       "products": [
         {
@@ -549,6 +557,7 @@
       "name": "Oklahoma City Thunder",
       "colors": { "primary": "#007AC1", "secondary": "#EF3B24" },
       "logo": "https://www.nbastore.eu/content/assets/NBA_Oklahoma_City_Thunder_3379-864915250024.7834.svg",
+      "asideImg": "https://www.freelogovectors.net/wp-content/uploads/2023/10/oklahoma_city_thunder_logo-freelogovectors.net_-640x400.png",
       "headerpic": "https://sport.sky.it/assets/images/8701804c97998f4f3fea5909246766f28ce685b8/skysport/it/nba/2025/10/31/nba-okc-thunder-eastern-conference-record/shai_okc_getty.jpg",
       "products": [
         {

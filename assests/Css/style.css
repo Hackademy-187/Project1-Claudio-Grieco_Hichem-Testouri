@@ -180,6 +180,7 @@ h6 {
   padding: 10px;
   letter-spacing: 1px;
 }
+
 /* LIST NAV header */
 .customHeader ul {
   background-color: var(--first-color);
@@ -464,4 +465,15 @@ hr {
 .counterStyle i {
   font-size: 20px;
   opacity: 0.9;
+}
+
+/*-------------ASIDE LOGO -------------*/
+.logoAside img {
+  width: 500px;
+  height: 300px;
+  margin-top: 50px;
+  position: absolute;
+  bottom: -117%;
+  transform-origin: 20%;
+  transform: rotateZ(270deg);
 }

@@ -144,6 +144,10 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       }
       console.log(selectedTeam.products);
+
+      let imgAside = document.getElementById("AsideImg");
+      imgAside.src = selectedTeam.asideImg;
+      imgAside.alt = `${selectedTeam.name} logo`;
     });
 
   // ==============================
@@ -151,33 +155,45 @@ document.addEventListener("DOMContentLoaded", () => {
   // ==============================
   let btnDarkMode = document.querySelector(".btnDarkMode");
   let isClicked = false;
+  function isDarkMode() {
+    document.body.style.backgroundColor = "#494949";
+    document.body.style.color = "#fff";
+    document.querySelector(".whiteNav").style.backgroundColor = "#494949";
+    document.querySelector(".whiteNav").style.color = "#fff";
+    document.querySelector(".costumButton").style.backgroundColor = "#fff";
+    document.querySelector(".costumButton").style.color = "#000000";
+    btnDarkMode.innerHTML = `<i class="fa-sharp fa-solid fa-sun" style="color: rgb(219, 211, 4);"></i>`;
+  }
+  function isLightMode() {
+    // 👉 Light mode
+    document.body.style.backgroundColor = "#fff";
+    document.body.style.color = "#000";
+    document.querySelector(".whiteNav").style.backgroundColor = "#fff";
+    document.querySelector(".whiteNav").style.color = "#000";
+    document.querySelector(".costumButton").style.backgroundColor = "#000";
+    document.querySelector(".costumButton").style.color = "#fff";
+    btnDarkMode.innerHTML = `<i class="fa-sharp fa-solid fa-moon" style="color: rgb(255, 255, 255);"></i>`;
+  }
 
   btnDarkMode.addEventListener("click", () => {
     if (isClicked) {
       // 👉 Dark mode
-      document.body.style.backgroundColor = "#000";
-      document.body.style.color = "#fff";
-      document.querySelector(".whiteNav").style.backgroundColor = "#000";
-      document.querySelector(".whiteNav").style.color = "#fff";
-      document.querySelector(".costumButton").style.backgroundColor = "#fff";
-      document.querySelector(".costumButton").style.color = "#000";
-
-      btnDarkMode.innerHTML = `<i class="fa-sharp fa-solid fa-sun" style="color: rgb(219, 211, 4);"></i>`;
+      isDarkMode();
       isClicked = false;
+      localStorage.setItem("mode", "dark");
     } else {
-      // 👉 Light mode
-      document.body.style.backgroundColor = "#fff";
-      document.body.style.color = "#000";
-      document.querySelector(".whiteNav").style.backgroundColor = "#fff";
-      document.querySelector(".whiteNav").style.color = "#000";
-      document.querySelector(".costumButton").style.backgroundColor = "#000";
-      document.querySelector(".costumButton").style.color = "#fff";
-
-      btnDarkMode.innerHTML = `<i class="fa-sharp fa-solid fa-moon" style="color: rgb(255, 255, 255);"></i>`;
+      isLightMode();
       isClicked = true;
+      localStorage.setItem("mode", "light");
     }
   });
 
+  let mode = localStorage.getItem("mode");
+  if (mode === "dark") {
+    isDarkMode();
+  } else {
+    isLightMode();
+  }
   // ==============================
   // 🔢 COUNTER ANIMATION
   // ==============================
@@ -226,7 +242,7 @@ let x = setInterval(function () {
   let seconds = Math.floor((distance % (1000 * 60)) / 1000);
   document.getElementById("countdown").innerHTML =
     `Buy 3 and get 1 free ! PROMO VALID TILL :  
-  ${formatTime(days)} : ${formatTime(hours)} : ${formatTime(minutes)} : ${formatTime(seconds)}`;
+  ${formatTime(days)} : ${formatTime(hours)} : ${formatTime(minutes)} : ${formatTime(seconds)}s`;
   if (distance < 0) {
     clearInterval(x);
     document.getElementById("countdown").innerHTML = "EXPIRED";
