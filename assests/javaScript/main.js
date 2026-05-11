@@ -148,33 +148,100 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
   // ==============================
-  // 🌙 DARK MODE (FIXED MULTIPLE BUTTON BUG)
+  // 🌙 DARK MODE
   // ==============================
   let btnDarkMode = document.querySelector(".btnDarkMode");
   let isClicked = false;
-
   function isDarkMode() {
     document.body.style.backgroundColor = "#494949";
     document.body.style.color = "#fff";
+    document.querySelector(".whiteNav").style.backgroundColor = "#494949";
+    document.querySelector(".whiteNav").style.color = "#fff";
+    document.querySelector(".costumButton").style.backgroundColor = "#fff";
+    document.querySelector(".costumButton").style.color = "#000000";
+    btnDarkMode.innerHTML = `<i class="fa-sharp fa-solid fa-sun" style="color: rgb(219, 211, 4);"></i>`;
   }
-
   function isLightMode() {
+    // 👉 Light mode
     document.body.style.backgroundColor = "#fff";
     document.body.style.color = "#000";
+    document.querySelector(".whiteNav").style.backgroundColor = "#fff";
+    document.querySelector(".whiteNav").style.color = "#000";
+    document.querySelector(".costumButton").style.backgroundColor = "#000";
+    document.querySelector(".costumButton").style.color = "#fff";
+    btnDarkMode.innerHTML = `<i class="fa-sharp fa-solid fa-moon" style="color: rgb(255, 255, 255);"></i>`;
   }
 
   btnDarkMode.addEventListener("click", () => {
-    isClicked = !isClicked;
-
     if (isClicked) {
-      isLightMode();
-      localStorage.setItem("mode", "light");
-    } else {
+      // 👉 Dark mode
       isDarkMode();
+      isClicked = false;
       localStorage.setItem("mode", "dark");
+    } else {
+      isLightMode();
+      isClicked = true;
+      localStorage.setItem("mode", "light");
     }
   });
 
   let mode = localStorage.getItem("mode");
-  mode === "dark" ? isDarkMode() : isLightMode();
+  if (mode === "dark") {
+    isDarkMode();
+  } else {
+    isLightMode();
+  }
+  // ==============================
+  // 🔢 COUNTER ANIMATION
+  // ==============================
+  function createInterval(element, maxNumber, timeFrequency) {
+    let counter = 0;
+
+    let interval = setInterval(() => {
+      if (counter < maxNumber) {
+        counter++;
+        element.innerHTML = counter;
+      } else {
+        clearInterval(interval);
+      }
+    }, timeFrequency);
+  }
+
+  let isChecked = false;
+
+  // 👀 Observe when element appears
+  let observerNumber = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting && !isChecked) {
+        createInterval(firstNumber, 500, 10);
+        createInterval(secondNumber, 999, 25);
+        createInterval(thirdNumber, 999, 0);
+        isChecked = true;
+      }
+    });
+  });
+
+  observerNumber.observe(thirdNumber);
 });
+// ==============================
+// 🔢 COUNTDOWN ANIMATION
+// ==============================
+function formatTime(value) {
+  return value < 10 ? "0" + value : value;
+}
+let countDown = new Date("may 31, 2026 23:59:59").getTime();
+let x = setInterval(function () {
+  let now = new Date().getTime();
+  let distance = countDown - now;
+  let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  document.getElementById("countdown").innerHTML =
+    `Buy 3 and get 1 free ! PROMO VALID TILL :  
+  ${formatTime(days)} : ${formatTime(hours)} : ${formatTime(minutes)} : ${formatTime(seconds)}s`;
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("countdown").innerHTML = "EXPIRED";
+  }
+}, 1000);
