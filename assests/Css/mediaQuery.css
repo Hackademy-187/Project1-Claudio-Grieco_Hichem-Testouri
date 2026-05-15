@@ -25,13 +25,13 @@
     animation: separateEntrance 2s ease forwards;
   }
 }
-@media (min-width: 800px) and (max-width: 1300px) {
+@media (min-width: 800px) and (max-width: 1700px) {
   #AsideImg {
-    width: 400px;
-    height: 300px;
+    width: 350px;
+    height: 250px;
     margin-top: 50px;
     position: absolute;
-    bottom: -117%;
+    bottom: -150%;
     transform-origin: 20%;
     transform: rotateZ(270deg);
   }
